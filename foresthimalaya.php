@@ -21,22 +21,6 @@
 		<p class="margin-top30">Sustainable management of the forests not only meets people’s subsistence needs of fuel wood, fodder but also plays a major role in reducing deforestation and degradation and providing a global benefit of carbon sequestration. </p>
 		<p class="margin-top30">The core belief of Forest Himalaya is that forests play an important role in sequestering carbon naturally and reforestation programs improve livelihood opportunities for local communities of the Himalayas and lead to environmentally sustainable ways of living. </p>
 		<p class="margin-top30">On the occasion of World Environment Day 2012, Forest Himalaya launched its activities with a reforestation program in Nallu community forest in Nepal.</p>
-		<div id="myCarousel" class="carousel slide">
-		  <ol class="carousel-indicators">
-		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		    <li data-target="#myCarousel" data-slide-to="1"></li>
-		    <li data-target="#myCarousel" data-slide-to="2"></li>
-		  </ol>
-		  <!-- Carousel items -->
-		  <div class="carousel-inner">
-		    <div class="active item"><img class="image-responsive" src="/images/sn-slider1.jpg"></div>
-		    <div class="item"><img class="image-responsive" src="/images/sn-slider2.jpg"></div>
-		    <div class="item"><img class="image-responsive" src="/images/sn-slider3.jpg"></div>
-		  </div>
-		  <!-- Carousel nav -->
-		  <a class="carousel-control left" href="#myCarousel" data-slide="prev"><span class="icon-rightarrow"></span></a>
-		  <a class="carousel-control right" href="#myCarousel" data-slide="next"><span class="icon-leftarrow"></span></a>
-		</div>
 	</div>
 	<div class="mobile-project-contianer">
 		<div class="text-center section-heading">
