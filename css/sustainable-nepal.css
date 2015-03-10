@@ -410,6 +410,16 @@ hr{
 	font-size: 27px;
 	border: none;
 }
+.btn.btn-default.donate.btn-facebook{
+	padding: 10px 40px;
+	margin: 0 auto;
+}
+.btn-container-fb {
+	width: 100%;
+	margin-bottom: 5em;
+	text-align: center;
+}
+
 
 .btn.btn-default.donate:hover{
     background: #e04515;
