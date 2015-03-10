@@ -25,4 +25,3 @@
   </head>
 
     <body data-spy="scroll" data-target=".navbar">
-        <?php include_once("analyticstracking.php") ?>
