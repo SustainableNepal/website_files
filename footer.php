@@ -20,12 +20,12 @@
 		</div>
 	</footer> -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/js/lib/jquery.scrollPoint.js"></script>
-    <script src="/js/lib/jquery.simple-text-rotator.js"></script>
-    <script src="/js/lib/bootstrap.js"></script>
-    <script src="/js/lib/wow.js"></script>
-    <script src="/js/sustainable-nepal.js"></script>
-    <script src="/js/lib/respond.js"></script>
+    <script src="js/lib/jquery.scrollPoint.js"></script>
+    <script src="js/lib/jquery.simple-text-rotator.js"></script>
+    <script src="js/lib/bootstrap.js"></script>
+    <script src="js/lib/wow.js"></script>
+    <script src="js/sustainable-nepal.js"></script>
+    <script src="js/lib/respond.js"></script>
 
     
 

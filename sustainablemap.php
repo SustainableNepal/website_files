@@ -21,7 +21,7 @@
 		<p class="margin-top30">The purpose of the Sustainable Map is to inspire and to make people inspire each other – getting into contact and learning from each other. But not the least – to show that the combined power of local initiatives has an impact on a regional, national and a global level!</p>
 		<p class="margin-top30">Sustainable Map is based on open source, and is a non-profit initiative by the Sustainable Nepal.</p>
 		<div class="text-center margin-bottom40">
-			<a href="http://www.sustainablemap.org/" class="btn btn-default donate launch-map">LAUNCH MAP</a>
+			<a href="//www.sustainablemap.org/" class="btn btn-default donate launch-map">LAUNCH MAP</a>
 		</div>
 	</div>
 <div class="mobile-project-contianer">

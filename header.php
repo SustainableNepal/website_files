@@ -9,14 +9,14 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content=“Sustainable Nepal”>
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet" type="text/css">
-    <link href="/css/lib/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="/css/lib/simpletextrotator.css" rel="stylesheet" type="text/css">
+    <link href="css/lib/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/lib/simpletextrotator.css" rel="stylesheet" type="text/css">
     <link href="css/lib/animate.css" rel="stylesheet">
-    <link href="/css/sustainable-nepal.css" rel="stylesheet" type="text/css">
-    <link href="/css/project-style.css" rel="stylesheet" type="text/css">
+    <link href="css/sustainable-nepal.css" rel="stylesheet" type="text/css">
+    <link href="css/project-style.css" rel="stylesheet" type="text/css">
    
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>

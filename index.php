@@ -4,7 +4,7 @@
     <div class="parallax-overlay"></div> 
     <div class="home-content">
         <div class="container">
-            <div class="slide-logo text-center"><img class="image-responsive" src="/images/Logo_SustainNepal_white.png" style="width: 100px; height: 155px;"></div>
+            <div class="slide-logo text-center"><img class="image-responsive" src="images/Logo_SustainNepal_white.png" style="width: 100px; height: 155px;"></div>
             <div class="main-flex-slider">
                 <h1 class="rotate">Environmental Sustainability, Economic Sustainability, Social Sustainability</h1>
             </div> 
@@ -26,7 +26,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php"><img src="/images/min-logo1.png" style="height: 50px;"></a>
+                <a class="navbar-brand" href="index.php"><img src="images/min-logo1.png" style="height: 50px;"></a>
             </div>
             <div class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
                 <ul class="nav navbar-nav navbar-right scrollto">
@@ -36,6 +36,7 @@
                     <li class=""><a href="#involved">Get Involved</a></li>
                     <li><a href="#team">Team</a></li>
                     <li class=""><a href="#page-contact">Contact</a></li>
+                    <li class=""><a href="news.php">News</a></li>
                 </ul>
             </div>
         </div>
@@ -52,7 +53,7 @@
             <p class="text-small about-paragraph">Sustainable Nepal was established on the occasion of World Environment Day - June 5, 2012. This organization is aimed at making every effort to accelerate progress in achieving ecological, economical and social sustainable development of Nepal.</p>
         </div>
     </div>
-    <img src="/images/illustration.png" style="width:100%;">
+    <img src="images/illustration.png" style="width:100%;">
     
     <section class="tabs tabs-style-iconbox">
         <nav id="tab-menu">
@@ -76,12 +77,12 @@
                         </ul>
                     </div>
                     <div class="col-sm-6 text-center">
-                        <img class="margin-top10" src="/images/Ecology-18.png">
+                        <img class="margin-top10" src="images/Ecology-18.png">
                     </div>
                 </section>
                 <section id="vision-content" class="clearfix section-heading" style="display:none;">
                     <div class="col-sm-6 text-center">
-                         <img src="/images/Ecology-21.png" style="margin-top: -23px;">
+                         <img src="images/Ecology-21.png" style="margin-top: -23px;">
                     </div>
                     <div class="col-sm-6">
                         <p>At Sustainable Nepal, we are driven by our vision to make Nepal a better place to live in. Our work is primarily focused at the grassroots level.  An important part of the change process is to visualize local changes and how each contributes unique change in a larger perspective. It is hoped that this in turn will influence and inspire other stakeholders and decision makers to drive change towards sustainable development - both in Nepal and abroad.  </p>
@@ -98,7 +99,7 @@
                         </ul>
                     </div>
                     <div class="col-sm-6 text-center">
-                        <img class="margin-top10" src="/images/Ecology-09.png" style="margin-top: 65px;">
+                        <img class="margin-top10" src="images/Ecology-09.png" style="margin-top: 65px;">
                     </div>
                 </section>
             </article>
@@ -127,7 +128,7 @@
         <div class="row margin-bottom80">
             <div class="col-sm-4 wow animated fadeInLeft animated"  data-wow-duration="900ms" data-wow-delay="400ms">
                 <div class="panel text-center">
-                    <img class="image-responsive margin-top40" src="/images/vol.png">
+                    <img class="image-responsive margin-top40" src="images/vol.png">
                     <div class="content">
                         <h3 class="margin-bottom25">VOLUNTEERS</h3>
                         <p>If you are interested in helping Nepal in some way and volunteering in Sustainable Nepal, Please send us your application letter and you CV.</p>
@@ -137,21 +138,21 @@
             </div>
             <div class="col-sm-4 wow animated fadeInLeft animated"  data-wow-duration="900ms" data-wow-delay="500ms">
                 <div class="panel text-center">
-                    <img class="image-responsive margin-top40" src="/images/stu.png">
+                    <img class="image-responsive margin-top40" src="images/stu.png">
                     <div class="content">
                         <h3 class="margin-bottom25">STUDENTS</h3>
                         <p>If you are interested in an exchange program in schools between Nepal and abroad, we can help you with contacts and prepare a complete program for you.</p>
-                        <a href="/sustainableexchange.php" class="sus-link">Learn More <span class="icon-rightarrow"></span></a>
+                        <a href="sustainableexchange.php" class="sus-link">Learn More <span class="icon-rightarrow"></span></a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4 wow animated fadeInLeft animated"  data-wow-duration="900ms" data-wow-delay="600ms">
                 <div class="panel text-center">
-                    <img class="image-responsive margin-top40" src="/images/edu.png">
+                    <img class="image-responsive margin-top40" src="images/edu.png">
                     <div class="content">
                         <h3 class="margin-bottom25">EDUCATORS</h3>
                         <p> If you are a teacher in a school and are interested in finding out more about the exchange program, contact us for more information.</p>
-                        <a href="/sustainableexchange.php" class="sus-link">Learn More <span class="icon-rightarrow"></span></a>
+                        <a href="sustainableexchange.php" class="sus-link">Learn More <span class="icon-rightarrow"></span></a>
                     </div>
                 </div>
             </div>
