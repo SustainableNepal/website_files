@@ -53,7 +53,7 @@
             <p class="text-small about-paragraph">Sustainable Nepal was established on the occasion of World Environment Day - June 5, 2012. This organization is aimed at making every effort to accelerate progress in achieving ecological, economical and social sustainable development of Nepal.</p>
         </div>
     </div>
-    <img src="images/illustration.png" style="width:100%;">
+    <img src="images/illustation1.png" style="width:100%;">
     
     <section class="tabs tabs-style-iconbox">
         <nav id="tab-menu">
