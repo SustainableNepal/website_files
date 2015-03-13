@@ -9,15 +9,26 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         concat: {
-            dist: {
+            js: {
                 src: [
                     'js/lib/wow.js',
                     'js/lib/jquery.simple-text-rotator.js',
                     'js/lib/jQuery.scrollPoint.js',
                     'js/lib/bootstrap.js',
+                    'js/lib/respond.js',
                     'js/sustainable-nepal.js'
                 ],
-                dest: 'js/build/production.js',
+                dest: 'js/build/production.js'
+            },
+              css: {
+                src: [
+                    'css/lib/animate.css',
+                    'css/lib/simpletextrotator.css',
+                    'css/lib/bootstrap.css', 
+                    'css/sustainable-nepal.css', 
+                    'css/project-style.css'
+                ],
+                dest: 'css/build/production.css'
             }
         },
 
@@ -29,29 +40,22 @@ module.exports = function(grunt) {
         },
 
         cssmin: {
-            combine: {
-                files: {
-                    'css/build/production.css': ['css/lib/animate.css','css/lib/simpletextrotator.css','css/lib/bootstrap.css', 'css/sustainable-nepal.css']
-                }
-            },
-
-            minify: {
-                expand: true,
-                cwd: 'css/build/',
-                src: ['*.css'],
-                dest: 'css/build/',
-                ext: '.min.css'
+            css:{
+                src: 'css/build/production.css',
+                dest: 'css/build/production.min.css'
             }
         },
 
         watch: {
-            scripts: {
+            js: {
                 files: ['js/*.js'],
-                tasks: ['concat', 'uglify'],
-                options: {
-                    spawn: false,
-                },
-            } 
+                tasks: ['concat', 'uglify']
+            },
+
+            css: {
+              files: ['css/*.css'],
+              tasks: ['cssmin', 'concat']
+            }
         }
 
     });

@@ -36,7 +36,6 @@
                     <li class=""><a href="#involved">Get Involved</a></li>
                     <li><a href="#team">Team</a></li>
                     <li class=""><a href="#page-contact">Contact</a></li>
-                    <li class=""><a href="news.php">News</a></li>
                 </ul>
             </div>
         </div>
@@ -373,9 +372,7 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-<?php $date = date("Y"); ?>
 <?php include("footer.php") ?>
-htmlboiler
 
 
 

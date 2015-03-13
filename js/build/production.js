@@ -1,3 +1,658 @@
+(function() {
+  var MutationObserver, Util, WeakMap,
+    __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+
+  Util = (function() {
+    function Util() {}
+
+    Util.prototype.extend = function(custom, defaults) {
+      var key, value;
+      for (key in defaults) {
+        value = defaults[key];
+        if (custom[key] == null) {
+          custom[key] = value;
+        }
+      }
+      return custom;
+    };
+
+    Util.prototype.isMobile = function(agent) {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent);
+    };
+
+    return Util;
+
+  })();
+
+  WeakMap = this.WeakMap || this.MozWeakMap || (WeakMap = (function() {
+    function WeakMap() {
+      this.keys = [];
+      this.values = [];
+    }
+
+    WeakMap.prototype.get = function(key) {
+      var i, item, _i, _len, _ref;
+      _ref = this.keys;
+      for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
+        item = _ref[i];
+        if (item === key) {
+          return this.values[i];
+        }
+      }
+    };
+
+    WeakMap.prototype.set = function(key, value) {
+      var i, item, _i, _len, _ref;
+      _ref = this.keys;
+      for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
+        item = _ref[i];
+        if (item === key) {
+          this.values[i] = value;
+          return;
+        }
+      }
+      this.keys.push(key);
+      return this.values.push(value);
+    };
+
+    return WeakMap;
+
+  })());
+
+  MutationObserver = this.MutationObserver || this.WebkitMutationObserver || this.MozMutationObserver || (MutationObserver = (function() {
+    function MutationObserver() {
+      console.warn('MutationObserver is not supported by your browser.');
+      console.warn('WOW.js cannot detect dom mutations, please call .sync() after loading new content.');
+    }
+
+    MutationObserver.notSupported = true;
+
+    MutationObserver.prototype.observe = function() {};
+
+    return MutationObserver;
+
+  })());
+
+  this.WOW = (function() {
+    WOW.prototype.defaults = {
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: true,
+      live: true
+    };
+
+    function WOW(options) {
+      if (options == null) {
+        options = {};
+      }
+      this.scrollCallback = __bind(this.scrollCallback, this);
+      this.scrollHandler = __bind(this.scrollHandler, this);
+      this.start = __bind(this.start, this);
+      this.scrolled = true;
+      this.config = this.util().extend(options, this.defaults);
+      this.animationNameCache = new WeakMap();
+    }
+
+    WOW.prototype.init = function() {
+      var _ref;
+      this.element = window.document.documentElement;
+      if ((_ref = document.readyState) === "interactive" || _ref === "complete") {
+        this.start();
+      } else {
+        document.addEventListener('DOMContentLoaded', this.start);
+      }
+      return this.finished = [];
+    };
+
+    WOW.prototype.start = function() {
+      var box, _i, _len, _ref;
+      this.stopped = false;
+      this.boxes = (function() {
+        var _i, _len, _ref, _results;
+        _ref = this.element.getElementsByClassName(this.config.boxClass);
+        _results = [];
+        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+          box = _ref[_i];
+          _results.push(box);
+        }
+        return _results;
+      }).call(this);
+      this.all = (function() {
+        var _i, _len, _ref, _results;
+        _ref = this.boxes;
+        _results = [];
+        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+          box = _ref[_i];
+          _results.push(box);
+        }
+        return _results;
+      }).call(this);
+      if (this.boxes.length) {
+        if (this.disabled()) {
+          this.resetStyle();
+        } else {
+          _ref = this.boxes;
+          for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+            box = _ref[_i];
+            this.applyStyle(box, true);
+          }
+          window.addEventListener('scroll', this.scrollHandler, false);
+          window.addEventListener('resize', this.scrollHandler, false);
+          this.interval = setInterval(this.scrollCallback, 50);
+        }
+      }
+      if (this.config.live) {
+        return new MutationObserver((function(_this) {
+          return function(records) {
+            var node, record, _j, _len1, _results;
+            _results = [];
+            for (_j = 0, _len1 = records.length; _j < _len1; _j++) {
+              record = records[_j];
+              _results.push((function() {
+                var _k, _len2, _ref1, _results1;
+                _ref1 = record.addedNodes || [];
+                _results1 = [];
+                for (_k = 0, _len2 = _ref1.length; _k < _len2; _k++) {
+                  node = _ref1[_k];
+                  _results1.push(this.doSync(node));
+                }
+                return _results1;
+              }).call(_this));
+            }
+            return _results;
+          };
+        })(this)).observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+      }
+    };
+
+    WOW.prototype.stop = function() {
+      this.stopped = true;
+      window.removeEventListener('scroll', this.scrollHandler, false);
+      window.removeEventListener('resize', this.scrollHandler, false);
+      if (this.interval != null) {
+        return clearInterval(this.interval);
+      }
+    };
+
+    WOW.prototype.sync = function(element) {
+      if (MutationObserver.notSupported) {
+        return this.doSync(this.element);
+      }
+    };
+
+    WOW.prototype.doSync = function(element) {
+      var box, _i, _len, _ref, _results;
+      if (!this.stopped) {
+        if (element == null) {
+          element = this.element;
+        }
+        if (element.nodeType !== 1) {
+          return;
+        }
+        element = element.parentNode || element;
+        _ref = element.getElementsByClassName(this.config.boxClass);
+        _results = [];
+        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+          box = _ref[_i];
+          if (__indexOf.call(this.all, box) < 0) {
+            this.applyStyle(box, true);
+            this.boxes.push(box);
+            this.all.push(box);
+            _results.push(this.scrolled = true);
+          } else {
+            _results.push(void 0);
+          }
+        }
+        return _results;
+      }
+    };
+
+    WOW.prototype.show = function(box) {
+      this.applyStyle(box);
+      return box.className = "" + box.className + " " + this.config.animateClass;
+    };
+
+    WOW.prototype.applyStyle = function(box, hidden) {
+      var delay, duration, iteration;
+      duration = box.getAttribute('data-wow-duration');
+      delay = box.getAttribute('data-wow-delay');
+      iteration = box.getAttribute('data-wow-iteration');
+      return this.animate((function(_this) {
+        return function() {
+          return _this.customStyle(box, hidden, duration, delay, iteration);
+        };
+      })(this));
+    };
+
+    WOW.prototype.animate = (function() {
+      if ('requestAnimationFrame' in window) {
+        return function(callback) {
+          return window.requestAnimationFrame(callback);
+        };
+      } else {
+        return function(callback) {
+          return callback();
+        };
+      }
+    })();
+
+    WOW.prototype.resetStyle = function() {
+      var box, _i, _len, _ref, _results;
+      _ref = this.boxes;
+      _results = [];
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        box = _ref[_i];
+        _results.push(box.setAttribute('style', 'visibility: visible;'));
+      }
+      return _results;
+    };
+
+    WOW.prototype.customStyle = function(box, hidden, duration, delay, iteration) {
+      if (hidden) {
+        this.cacheAnimationName(box);
+      }
+      box.style.visibility = hidden ? 'hidden' : 'visible';
+      if (duration) {
+        this.vendorSet(box.style, {
+          animationDuration: duration
+        });
+      }
+      if (delay) {
+        this.vendorSet(box.style, {
+          animationDelay: delay
+        });
+      }
+      if (iteration) {
+        this.vendorSet(box.style, {
+          animationIterationCount: iteration
+        });
+      }
+      this.vendorSet(box.style, {
+        animationName: hidden ? 'none' : this.cachedAnimationName(box)
+      });
+      return box;
+    };
+
+    WOW.prototype.vendors = ["moz", "webkit"];
+
+    WOW.prototype.vendorSet = function(elem, properties) {
+      var name, value, vendor, _results;
+      _results = [];
+      for (name in properties) {
+        value = properties[name];
+        elem["" + name] = value;
+        _results.push((function() {
+          var _i, _len, _ref, _results1;
+          _ref = this.vendors;
+          _results1 = [];
+          for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+            vendor = _ref[_i];
+            _results1.push(elem["" + vendor + (name.charAt(0).toUpperCase()) + (name.substr(1))] = value);
+          }
+          return _results1;
+        }).call(this));
+      }
+      return _results;
+    };
+
+    WOW.prototype.vendorCSS = function(elem, property) {
+      var result, style, vendor, _i, _len, _ref;
+      style = window.getComputedStyle(elem);
+      result = style.getPropertyCSSValue(property);
+      _ref = this.vendors;
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        vendor = _ref[_i];
+        result = result || style.getPropertyCSSValue("-" + vendor + "-" + property);
+      }
+      return result;
+    };
+
+    WOW.prototype.animationName = function(box) {
+      var animationName;
+      try {
+        animationName = this.vendorCSS(box, 'animation-name').cssText;
+      } catch (_error) {
+        animationName = window.getComputedStyle(box).getPropertyValue('animation-name');
+      }
+      if (animationName === 'none') {
+        return '';
+      } else {
+        return animationName;
+      }
+    };
+
+    WOW.prototype.cacheAnimationName = function(box) {
+      return this.animationNameCache.set(box, this.animationName(box));
+    };
+
+    WOW.prototype.cachedAnimationName = function(box) {
+      return this.animationNameCache.get(box);
+    };
+
+    WOW.prototype.scrollHandler = function() {
+      return this.scrolled = true;
+    };
+
+    WOW.prototype.scrollCallback = function() {
+      var box;
+      if (this.scrolled) {
+        this.scrolled = false;
+        this.boxes = (function() {
+          var _i, _len, _ref, _results;
+          _ref = this.boxes;
+          _results = [];
+          for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+            box = _ref[_i];
+            if (!(box)) {
+              continue;
+            }
+            if (this.isVisible(box)) {
+              this.show(box);
+              continue;
+            }
+            _results.push(box);
+          }
+          return _results;
+        }).call(this);
+        if (!(this.boxes.length || this.config.live)) {
+          return this.stop();
+        }
+      }
+    };
+
+    WOW.prototype.offsetTop = function(element) {
+      var top;
+      while (element.offsetTop === void 0) {
+        element = element.parentNode;
+      }
+      top = element.offsetTop;
+      while (element = element.offsetParent) {
+        top += element.offsetTop;
+      }
+      return top;
+    };
+
+    WOW.prototype.isVisible = function(box) {
+      var bottom, offset, top, viewBottom, viewTop;
+      offset = box.getAttribute('data-wow-offset') || this.config.offset;
+      viewTop = window.pageYOffset;
+      viewBottom = viewTop + Math.min(this.element.clientHeight, innerHeight) - offset;
+      top = this.offsetTop(box);
+      bottom = top + box.clientHeight;
+      return top <= viewBottom && bottom >= viewTop;
+    };
+
+    WOW.prototype.util = function() {
+      return this._util != null ? this._util : this._util = new Util();
+    };
+
+    WOW.prototype.disabled = function() {
+      return !this.config.mobile && this.util().isMobile(navigator.userAgent);
+    };
+
+    return WOW;
+
+  })();
+
+}).call(this);
+
+/* ===========================================================
+ * jquery-simple-text-rotator.js v1
+ * ===========================================================
+ * Copyright 2013 Pete Rojwongsuriya.
+ * http://www.thepetedesign.com
+ *
+ * A very simple and light weight jQuery plugin that 
+ * allows you to rotate multiple text without changing 
+ * the layout
+ * https://github.com/peachananr/simple-text-rotator
+ *
+ * ========================================================== */
+
+!function($){
+  
+  var defaults = {
+		animation: "dissolve",
+		separator: ",",
+		speed: 2000
+	};
+	
+	$.fx.step.textShadowBlur = function(fx) {
+    $(fx.elem).prop('textShadowBlur', fx.now).css({textShadow: '0 0 ' + Math.floor(fx.now) + 'px black'});
+  };
+	
+  $.fn.textrotator = function(options){
+    var settings = $.extend({}, defaults, options);
+    
+    return this.each(function(){
+      var el = $(this)
+      var array = [];
+      $.each(el.text().split(settings.separator), function(key, value) { 
+        array.push(value); 
+      });
+      el.text(array[0]);
+      
+      // animation option
+      var rotate = function() {
+        switch (settings.animation) { 
+          case 'dissolve':
+            el.animate({
+              textShadowBlur:20,
+              opacity: 0
+            }, 500 , function() {
+              index = $.inArray(el.text(), array)
+              if((index + 1) == array.length) index = -1
+              el.text(array[index + 1]).animate({
+                textShadowBlur:0,
+                opacity: 1
+              }, 500 );
+            });
+          break;
+          
+          case 'flip':
+            if(el.find(".back").length > 0) {
+              el.html(el.find(".back").html())
+            }
+          
+            var initial = el.text()
+            var index = $.inArray(initial, array)
+            if((index + 1) == array.length) index = -1
+            
+            el.html("");
+            $("<span class='front'>" + initial + "</span>").appendTo(el);
+            $("<span class='back'>" + array[index + 1] + "</span>").appendTo(el);
+            el.wrapInner("<span class='rotating' />").find(".rotating").hide().addClass("flip").show().css({
+              "-webkit-transform": " rotateY(-180deg)",
+              "-moz-transform": " rotateY(-180deg)",
+              "-o-transform": " rotateY(-180deg)",
+              "transform": " rotateY(-180deg)"
+            })
+            
+          break;
+          
+          case 'flipUp':
+            if(el.find(".back").length > 0) {
+              el.html(el.find(".back").html())
+            }
+          
+            var initial = el.text()
+            var index = $.inArray(initial, array)
+            if((index + 1) == array.length) index = -1
+            
+            el.html("");
+            $("<span class='front'>" + initial + "</span>").appendTo(el);
+            $("<span class='back'>" + array[index + 1] + "</span>").appendTo(el);
+            el.wrapInner("<span class='rotating' />").find(".rotating").hide().addClass("flip up").show().css({
+              "-webkit-transform": " rotateX(-180deg)",
+              "-moz-transform": " rotateX(-180deg)",
+              "-o-transform": " rotateX(-180deg)",
+              "transform": " rotateX(-180deg)"
+            })
+            
+          break;
+          
+          case 'flipCube':
+            if(el.find(".back").length > 0) {
+              el.html(el.find(".back").html())
+            }
+          
+            var initial = el.text()
+            var index = $.inArray(initial, array)
+            if((index + 1) == array.length) index = -1
+            
+            el.html("");
+            $("<span class='front'>" + initial + "</span>").appendTo(el);
+            $("<span class='back'>" + array[index + 1] + "</span>").appendTo(el);
+            el.wrapInner("<span class='rotating' />").find(".rotating").hide().addClass("flip cube").show().css({
+              "-webkit-transform": " rotateY(180deg)",
+              "-moz-transform": " rotateY(180deg)",
+              "-o-transform": " rotateY(180deg)",
+              "transform": " rotateY(180deg)"
+            })
+            
+          break;
+          
+          case 'flipCubeUp':
+            if(el.find(".back").length > 0) {
+              el.html(el.find(".back").html())
+            }
+          
+            var initial = el.text()
+            var index = $.inArray(initial, array)
+            if((index + 1) == array.length) index = -1
+            
+            el.html("");
+            $("<span class='front'>" + initial + "</span>").appendTo(el);
+            $("<span class='back'>" + array[index + 1] + "</span>").appendTo(el);
+            el.wrapInner("<span class='rotating' />").find(".rotating").hide().addClass("flip cube up").show().css({
+              "-webkit-transform": " rotateX(180deg)",
+              "-moz-transform": " rotateX(180deg)",
+              "-o-transform": " rotateX(180deg)",
+              "transform": " rotateX(180deg)"
+            })
+            
+          break;
+          
+          case 'spin':
+            if(el.find(".rotating").length > 0) {
+              el.html(el.find(".rotating").html())
+            }
+            index = $.inArray(el.text(), array)
+            if((index + 1) == array.length) index = -1
+            
+            el.wrapInner("<span class='rotating spin' />").find(".rotating").hide().text(array[index + 1]).show().css({
+              "-webkit-transform": " rotate(0) scale(1)",
+              "-moz-transform": "rotate(0) scale(1)",
+              "-o-transform": "rotate(0) scale(1)",
+              "transform": "rotate(0) scale(1)"
+            })
+          break;
+          
+          case 'fade':
+            el.fadeOut(settings.speed, function() {
+              index = $.inArray(el.text(), array)
+              if((index + 1) == array.length) index = -1
+              el.text(array[index + 1]).fadeIn(settings.speed);
+            });
+          break;
+        }
+      };
+      setInterval(rotate, settings.speed);
+    });
+  }
+  
+}(window.jQuery);
+
+
+
+/*
+    Copyright (c) 2012 Jeremie Patonnier
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+    
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+    THE SOFTWARE.
+*/
+
+(function ($) {
+    'use strict';
+
+    $.fn.scrollPoint = function (params) {
+        var $window = $(window);
+
+        params = $.extend({
+            up         : false,
+            down       : false,
+            offsetUp   : 0,
+            offsetDown : 0
+        }, params);
+
+        return this.each(function () {
+            var up         = params.up,
+                down       = params.down,
+                isIn       = false,
+                element    = $(this);
+
+            if (!up && up !== 0) {
+                up = element.offset().top;
+            }
+
+            if (!down && down !== 0) {
+                down = up + element.outerHeight();
+            }
+
+            up   -= params.offsetUp;
+            down -= params.offsetDown;
+
+            function triggerEvent(eventType, eventParams) {
+                var n, Event = $.Event(eventType);
+
+                for(n in eventParams) {
+                    Event[n] = eventParams[n];
+                }
+
+                element.trigger(Event);
+            }
+
+            function checkScroll() {
+                var pos   = $window.scrollTop(),
+                    oldIn = isIn,
+                    param = {
+                        isUp   : pos <= up,
+                        isDown : pos >= down,
+                        isIn   : false
+                    };
+
+                isIn = param.isIn = !param.isUp && !param.isDown;
+
+                if (oldIn !== isIn) {
+                    triggerEvent("scrollPoint" + (isIn ? "Enter" : "Leave"), param);
+                }
+
+                triggerEvent("scrollPointMove", param);
+            }
+
+            $window.scroll(checkScroll);
+        });
+    };
+})(jQuery);
 /*!
  * Bootstrap v3.0.2 by @fat and @mdo
  * Copyright 2013 Twitter, Inc.
@@ -2001,16 +2656,674 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
 
 }(jQuery);
 
+/* Respond.js: min/max-width media query polyfill. (c) Scott Jehl. MIT Lic. j.mp/respondjs  */
+(function( w ){
 
-// Sustainable-Nepal.JS
+	"use strict";
+
+	//exposed namespace
+	var respond = {};
+	w.respond = respond;
+
+	//define update even in native-mq-supporting browsers, to avoid errors
+	respond.update = function(){};
+
+	//define ajax obj
+	var requestQueue = [],
+		xmlHttp = (function() {
+			var xmlhttpmethod = false;
+			try {
+				xmlhttpmethod = new w.XMLHttpRequest();
+			}
+			catch( e ){
+				xmlhttpmethod = new w.ActiveXObject( "Microsoft.XMLHTTP" );
+			}
+			return function(){
+				return xmlhttpmethod;
+			};
+		})(),
+
+		//tweaked Ajax functions from Quirksmode
+		ajax = function( url, callback ) {
+			var req = xmlHttp();
+			if (!req){
+				return;
+			}
+			req.open( "GET", url, true );
+			req.onreadystatechange = function () {
+				if ( req.readyState !== 4 || req.status !== 200 && req.status !== 304 ){
+					return;
+				}
+				callback( req.responseText );
+			};
+			if ( req.readyState === 4 ){
+				return;
+			}
+			req.send( null );
+		},
+		isUnsupportedMediaQuery = function( query ) {
+			return query.replace( respond.regex.minmaxwh, '' ).match( respond.regex.other );
+		};
+
+	//expose for testing
+	respond.ajax = ajax;
+	respond.queue = requestQueue;
+	respond.unsupportedmq = isUnsupportedMediaQuery;
+	respond.regex = {
+		media: /@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi,
+		keyframes: /@(?:\-(?:o|moz|webkit)\-)?keyframes[^\{]+\{(?:[^\{\}]*\{[^\}\{]*\})+[^\}]*\}/gi,
+		comments: /\/\*[^*]*\*+([^/][^*]*\*+)*\//gi,
+		urls: /(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,
+		findStyles: /@media *([^\{]+)\{([\S\s]+?)$/,
+		only: /(only\s+)?([a-zA-Z]+)\s?/,
+		minw: /\(\s*min\-width\s*:\s*(\s*[0-9\.]+)(px|em)\s*\)/,
+		maxw: /\(\s*max\-width\s*:\s*(\s*[0-9\.]+)(px|em)\s*\)/,
+		minmaxwh: /\(\s*m(in|ax)\-(height|width)\s*:\s*(\s*[0-9\.]+)(px|em)\s*\)/gi,
+		other: /\([^\)]*\)/g
+	};
+
+	//expose media query support flag for external use
+	respond.mediaQueriesSupported = w.matchMedia && w.matchMedia( "only all" ) !== null && w.matchMedia( "only all" ).matches;
+
+	//if media queries are supported, exit here
+	if( respond.mediaQueriesSupported ){
+		return;
+	}
+
+	//define vars
+	var doc = w.document,
+		docElem = doc.documentElement,
+		mediastyles = [],
+		rules = [],
+		appendedEls = [],
+		parsedSheets = {},
+		resizeThrottle = 30,
+		head = doc.getElementsByTagName( "head" )[0] || docElem,
+		base = doc.getElementsByTagName( "base" )[0],
+		links = head.getElementsByTagName( "link" ),
+
+		lastCall,
+		resizeDefer,
+
+		//cached container for 1em value, populated the first time it's needed
+		eminpx,
+
+		// returns the value of 1em in pixels
+		getEmValue = function() {
+			var ret,
+				div = doc.createElement('div'),
+				body = doc.body,
+				originalHTMLFontSize = docElem.style.fontSize,
+				originalBodyFontSize = body && body.style.fontSize,
+				fakeUsed = false;
+
+			div.style.cssText = "position:absolute;font-size:1em;width:1em";
+
+			if( !body ){
+				body = fakeUsed = doc.createElement( "body" );
+				body.style.background = "none";
+			}
+
+			// 1em in a media query is the value of the default font size of the browser
+			// reset docElem and body to ensure the correct value is returned
+			docElem.style.fontSize = "100%";
+			body.style.fontSize = "100%";
+
+			body.appendChild( div );
+
+			if( fakeUsed ){
+				docElem.insertBefore( body, docElem.firstChild );
+			}
+
+			ret = div.offsetWidth;
+
+			if( fakeUsed ){
+				docElem.removeChild( body );
+			}
+			else {
+				body.removeChild( div );
+			}
+
+			// restore the original values
+			docElem.style.fontSize = originalHTMLFontSize;
+			if( originalBodyFontSize ) {
+				body.style.fontSize = originalBodyFontSize;
+			}
+
+
+			//also update eminpx before returning
+			ret = eminpx = parseFloat(ret);
+
+			return ret;
+		},
+
+		//enable/disable styles
+		applyMedia = function( fromResize ){
+			var name = "clientWidth",
+				docElemProp = docElem[ name ],
+				currWidth = doc.compatMode === "CSS1Compat" && docElemProp || doc.body[ name ] || docElemProp,
+				styleBlocks	= {},
+				lastLink = links[ links.length-1 ],
+				now = (new Date()).getTime();
+
+			//throttle resize calls
+			if( fromResize && lastCall && now - lastCall < resizeThrottle ){
+				w.clearTimeout( resizeDefer );
+				resizeDefer = w.setTimeout( applyMedia, resizeThrottle );
+				return;
+			}
+			else {
+				lastCall = now;
+			}
+
+			for( var i in mediastyles ){
+				if( mediastyles.hasOwnProperty( i ) ){
+					var thisstyle = mediastyles[ i ],
+						min = thisstyle.minw,
+						max = thisstyle.maxw,
+						minnull = min === null,
+						maxnull = max === null,
+						em = "em";
+
+					if( !!min ){
+						min = parseFloat( min ) * ( min.indexOf( em ) > -1 ? ( eminpx || getEmValue() ) : 1 );
+					}
+					if( !!max ){
+						max = parseFloat( max ) * ( max.indexOf( em ) > -1 ? ( eminpx || getEmValue() ) : 1 );
+					}
+
+					// if there's no media query at all (the () part), or min or max is not null, and if either is present, they're true
+					if( !thisstyle.hasquery || ( !minnull || !maxnull ) && ( minnull || currWidth >= min ) && ( maxnull || currWidth <= max ) ){
+						if( !styleBlocks[ thisstyle.media ] ){
+							styleBlocks[ thisstyle.media ] = [];
+						}
+						styleBlocks[ thisstyle.media ].push( rules[ thisstyle.rules ] );
+					}
+				}
+			}
+
+			//remove any existing respond style element(s)
+			for( var j in appendedEls ){
+				if( appendedEls.hasOwnProperty( j ) ){
+					if( appendedEls[ j ] && appendedEls[ j ].parentNode === head ){
+						head.removeChild( appendedEls[ j ] );
+					}
+				}
+			}
+			appendedEls.length = 0;
+
+			//inject active styles, grouped by media type
+			for( var k in styleBlocks ){
+				if( styleBlocks.hasOwnProperty( k ) ){
+					var ss = doc.createElement( "style" ),
+						css = styleBlocks[ k ].join( "\n" );
+
+					ss.type = "text/css";
+					ss.media = k;
+
+					//originally, ss was appended to a documentFragment and sheets were appended in bulk.
+					//this caused crashes in IE in a number of circumstances, such as when the HTML element had a bg image set, so appending beforehand seems best. Thanks to @dvelyk for the initial research on this one!
+					head.insertBefore( ss, lastLink.nextSibling );
+
+					if ( ss.styleSheet ){
+						ss.styleSheet.cssText = css;
+					}
+					else {
+						ss.appendChild( doc.createTextNode( css ) );
+					}
+
+					//push to appendedEls to track for later removal
+					appendedEls.push( ss );
+				}
+			}
+		},
+		//find media blocks in css text, convert to style blocks
+		translate = function( styles, href, media ){
+			var qs = styles.replace( respond.regex.comments, '' )
+					.replace( respond.regex.keyframes, '' )
+					.match( respond.regex.media ),
+				ql = qs && qs.length || 0;
+
+			//try to get CSS path
+			href = href.substring( 0, href.lastIndexOf( "/" ) );
+
+			var repUrls = function( css ){
+					return css.replace( respond.regex.urls, "$1" + href + "$2$3" );
+				},
+				useMedia = !ql && media;
+
+			//if path exists, tack on trailing slash
+			if( href.length ){ href += "/"; }
+
+			//if no internal queries exist, but media attr does, use that
+			//note: this currently lacks support for situations where a media attr is specified on a link AND
+				//its associated stylesheet has internal CSS media queries.
+				//In those cases, the media attribute will currently be ignored.
+			if( useMedia ){
+				ql = 1;
+			}
+
+			for( var i = 0; i < ql; i++ ){
+				var fullq, thisq, eachq, eql;
+
+				//media attr
+				if( useMedia ){
+					fullq = media;
+					rules.push( repUrls( styles ) );
+				}
+				//parse for styles
+				else{
+					fullq = qs[ i ].match( respond.regex.findStyles ) && RegExp.$1;
+					rules.push( RegExp.$2 && repUrls( RegExp.$2 ) );
+				}
+
+				eachq = fullq.split( "," );
+				eql = eachq.length;
+
+				for( var j = 0; j < eql; j++ ){
+					thisq = eachq[ j ];
+
+					if( isUnsupportedMediaQuery( thisq ) ) {
+						continue;
+					}
+
+					mediastyles.push( {
+						media : thisq.split( "(" )[ 0 ].match( respond.regex.only ) && RegExp.$2 || "all",
+						rules : rules.length - 1,
+						hasquery : thisq.indexOf("(") > -1,
+						minw : thisq.match( respond.regex.minw ) && parseFloat( RegExp.$1 ) + ( RegExp.$2 || "" ),
+						maxw : thisq.match( respond.regex.maxw ) && parseFloat( RegExp.$1 ) + ( RegExp.$2 || "" )
+					} );
+				}
+			}
+
+			applyMedia();
+		},
+
+		//recurse through request queue, get css text
+		makeRequests = function(){
+			if( requestQueue.length ){
+				var thisRequest = requestQueue.shift();
+
+				ajax( thisRequest.href, function( styles ){
+					translate( styles, thisRequest.href, thisRequest.media );
+					parsedSheets[ thisRequest.href ] = true;
+
+					// by wrapping recursive function call in setTimeout
+					// we prevent "Stack overflow" error in IE7
+					w.setTimeout(function(){ makeRequests(); },0);
+				} );
+			}
+		},
+
+		//loop stylesheets, send text content to translate
+		ripCSS = function(){
+
+			for( var i = 0; i < links.length; i++ ){
+				var sheet = links[ i ],
+				href = sheet.href,
+				media = sheet.media,
+				isCSS = sheet.rel && sheet.rel.toLowerCase() === "stylesheet";
+
+				//only links plz and prevent re-parsing
+				if( !!href && isCSS && !parsedSheets[ href ] ){
+					// selectivizr exposes css through the rawCssText expando
+					if (sheet.styleSheet && sheet.styleSheet.rawCssText) {
+						translate( sheet.styleSheet.rawCssText, href, media );
+						parsedSheets[ href ] = true;
+					} else {
+						if( (!/^([a-zA-Z:]*\/\/)/.test( href ) && !base) ||
+							href.replace( RegExp.$1, "" ).split( "/" )[0] === w.location.host ){
+							// IE7 doesn't handle urls that start with '//' for ajax request
+							// manually add in the protocol
+							if ( href.substring(0,2) === "//" ) { href = w.location.protocol + href; }
+							requestQueue.push( {
+								href: href,
+								media: media
+							} );
+						}
+					}
+				}
+			}
+			makeRequests();
+		};
+
+	//translate CSS
+	ripCSS();
+
+	//expose update for re-running respond later on
+	respond.update = ripCSS;
+
+	//expose getEmValue
+	respond.getEmValue = getEmValue;
+
+	//adjust on resize
+	function callMedia(){
+		applyMedia( true );
+	}
+
+	if( w.addEventListener ){
+		w.addEventListener( "resize", callMedia, false );
+	}
+	else if( w.attachEvent ){
+		w.attachEvent( "onresize", callMedia );
+	}
+})(this);
+
+
+(function(e){var t={topSpacing:0,bottomSpacing:0,className:"is-sticky",wrapperClassName:"sticky-wrapper",center:false,getWidthFrom:""},n=e(window),r=e(document),i=[],s=n.height(),o=function(){var t=n.scrollTop(),o=r.height(),u=o-s,a=t>u?u-t:0;for(var f=0;f<i.length;f++){var l=i[f],c=l.stickyWrapper.offset().top,h=c-l.topSpacing-a;if(t<=h){if(l.currentTop!==null){l.stickyElement.css("position","").css("top","");l.stickyElement.parent().removeClass(l.className);l.currentTop=null}}else{var p=o-l.stickyElement.outerHeight()-l.topSpacing-l.bottomSpacing-t-a;if(p<0){p=p+l.topSpacing}else{p=l.topSpacing}if(l.currentTop!=p){l.stickyElement.css("position","fixed").css("top",p);if(typeof l.getWidthFrom!=="undefined"){l.stickyElement.css("width",e(l.getWidthFrom).width())}l.stickyElement.parent().addClass(l.className);l.currentTop=p}}}},u=function(){s=n.height()},a={init:function(n){var r=e.extend(t,n);return this.each(function(){var t=e(this);var n=t.attr("id");var s=e("<div></div>").attr("id",n+"-sticky-wrapper").addClass(r.wrapperClassName);t.wrapAll(s);if(r.center){t.parent().css({width:t.outerWidth(),marginLeft:"auto",marginRight:"auto"})}if(t.css("float")=="right"){t.css({"float":"none"}).parent().css({"float":"right"})}var o=t.parent();o.css("height",t.outerHeight());i.push({topSpacing:r.topSpacing,bottomSpacing:r.bottomSpacing,stickyElement:t,currentTop:null,stickyWrapper:o,className:r.className,getWidthFrom:r.getWidthFrom})})},update:o,unstick:function(t){return this.each(function(){var t=e(this);removeIdx=-1;for(var n=0;n<i.length;n++){if(i[n].stickyElement.get(0)==t.get(0)){removeIdx=n}}if(removeIdx!=-1){i.splice(removeIdx,1);t.unwrap();t.removeAttr("style")}})}};if(window.addEventListener){window.addEventListener("scroll",o,false);window.addEventListener("resize",u,false)}else if(window.attachEvent){window.attachEvent("onscroll",o);window.attachEvent("onresize",u)}e.fn.sticky=function(t){if(a[t]){return a[t].apply(this,Array.prototype.slice.call(arguments,1))}else if(typeof t==="object"||!t){return a.init.apply(this,arguments)}else{e.error("Method "+t+" does not exist on jQuery.sticky")}};e.fn.unstick=function(t){if(a[t]){return a[t].apply(this,Array.prototype.slice.call(arguments,1))}else if(typeof t==="object"||!t){return a.unstick.apply(this,arguments)}else{e.error("Method "+t+" does not exist on jQuery.sticky")}};e(function(){setTimeout(o,0)})})(jQuery)
+
+// Sustainable-Nepal.js
 // Author: Sahaj Bajracharya
-// Licensed under MIT 
-"use strict";
 
-(function($){
+var $window = $(window),
+	$document = $(document),
+	$navBarLink = $('.nav li a'),
+	$home = $('#home') || {},
+	$navBar = $('#navigation .navbar'),
+	$eachSlider = $(".each-slider") || {};
 
-	
 
-})(jQuery);
+//************** Navigation Menu Interaction **********//
 
- 
+$(".navbar").sticky({topSpacing: 0});
+$('.scrollto a[href*=#]:not([href=#])').click(function() {
+	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		var target = $(this.hash);
+		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		if (target.length) {
+			$('html,body').animate({
+				scrollTop: target.offset().top - 10
+	        }, 1000);
+	        return false;
+	    }
+	}
+});
+
+//************** END Navigation Menu Interaction **********//
+
+//************** Project page Slider **********//
+
+var transfromValue = 0;
+	initialValue = 0,
+	leftClick = 3,
+	rightClick = 0,
+	$sliderButton = $('.slider-arrow');
+
+if($('.view-more').length){
+	$('.view-more').on('click', function(){
+		$(this).hide();
+		$('.multiple-slider').removeClass('height0').addClass('height100');
+		$('.hide-slider').fadeIn(300);
+	});
+
+	$('.hide-slider').on('click', function(){
+		$(this).fadeOut(300);
+		$('.multiple-slider').removeClass('height100').addClass('height0');
+		$('.view-more').fadeIn(300);
+	});
+}
+
+if($eachSlider.length > 0){
+	var sliderWidth = $eachSlider[0].offsetWidth || {};
+}
+
+$sliderButton.on('click', sliderInteraction);
+
+function sliderInteraction() {
+	var $this = $(this);
+
+	if($this.hasClass('right-arrow')){
+		if(rightClick >= 3) {
+			return;
+		}
+		transfromValue = initialValue + sliderWidth;
+		initialValue = transfromValue;
+		$eachSlider.css("transform","translateX("+ -transfromValue + "px)");
+		rightClick++;
+		leftClick--;
+	} else {
+		if(leftClick >= 3){
+			return;
+		}
+		transfromValue = initialValue - sliderWidth;
+		initialValue = transfromValue;
+		$eachSlider.css("transform","translateX("+ -transfromValue +"px)");
+		rightClick--;
+		leftClick++;
+	}
+}
+//************** END Project page Slider **********//
+
+//************** Home Page Contact form **********//
+var $contactSubmit = $('#contact-submit'),
+	$newsletterSumit = $('#newsletter-button'),
+	$nameInput = $('input[name=name]'),
+	$emailInput = $('input[name=email]'),
+	$messageInput = $('textarea[name=message]'),
+	$organizationInput = $('input[name=organization]'),
+	$newLetterInput = $('input[name=news-letter-email]');
+
+$contactSubmit.on('click', getContactData);
+$newsletterSumit.on('click', getNewsletterData);
+
+function getContactData(event){
+	event.preventDefault();
+	var post_data = {
+        'name' : $('input[name=name]').val(), 
+        'email' : $('input[name=email]').val(),
+        'organization': $('input[name=organization]').val(),
+        'message' : $('textarea[name=message]').val()
+    };
+
+    if(validateContactForm()){
+        $.ajax({
+	        url: "",
+	        type: "get",
+	        success: function(){
+	           $('#thank-modal').modal('show');
+			   $('#email-sucess').hide();
+			   $nameInput.val("");
+			   $emailInput.val("");
+			   $messageInput.val("");
+			   $organizationInput.val("");
+	        },
+	        error: function(){
+	       
+	        }
+	    });
+    }
+}
+
+function getNewsletterData(event){
+	event.preventDefault();
+	var post_data = {
+        'email' : $('input[name=news-letter-email]').val() 
+    };
+
+    if(validateNewsletterForm()){
+        $.ajax({
+	        url: "contact.py",
+	        type: "post",
+	        data: post_data,
+	        success: function(){
+	            $newLetterInput.val('');
+	        },
+	        error:function(){
+	            alert("Sorry, your message could not be delivered.");
+	        }
+	    });
+    }
+}
+
+function validateEmail(email) { 
+	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return re.test(email);
+}
+
+function validateNewsletterForm(){
+	var error5 = false,
+		$newLetterError = $('#error5'),
+		returnValue = true;
+
+	$newLetterInput.keypress(function() {
+		$newLetterError.removeClass('display1').addClass('display0');
+	});	
+
+	if(!validateEmail($newLetterInput.val())){
+		error5 = true;
+		returnValue = false;
+	}
+
+	if (error5 === true){
+		$newLetterError.removeClass('display0').addClass('display1');
+	}
+	else {
+		$newLetterError.removeClass('opacity1').addClass('opacity0trans');
+	}
+	return returnValue;
+}
+
+function validateContactForm() {
+	var error1 = false,
+		error2 = false,
+		error3 = false,
+		error4 = false,
+		$nameError = $('#error1'),
+		$emailError = $('#error2'),
+		$msgError = $('#error3'),
+		$orgError = $('#error4'),
+		returnValue = true,
+		errors = false;
+
+	$nameInput.keypress(function() {
+		$nameError.removeClass('display1').addClass('display0');
+	});
+
+	$emailInput.keypress(function() {
+		$emailError.removeClass('display1').addClass('display0');
+	});
+
+	$organizationInput.keypress(function() {
+		$orgError.removeClass('display1').addClass('display0');
+	});
+
+	$messageInput.keypress(function() {
+		$msgError.removeClass('display1').addClass('display0');
+	});
+
+	if( $nameInput.val().length == 0 && $emailInput.val().length == 0 && $messageInput.val().length == 0 && $organizationInput.val().length === 0){
+		error1 = true;
+		error2 = true;
+		error3 = true;
+		error4 = true;
+		errors = true;
+	}
+	if($nameInput.val().length == 0){
+		error1 = true;
+		errors = true;
+	}
+	if($emailInput.val().length == 0){
+		error2 = true;
+		errors = true;
+	}
+	if($messageInput.val().length == 0){
+		error3 = true;
+		errors = true;
+	}
+	if($organizationInput.val().length == 0){
+		error4 = true;
+		errors = true;
+	}
+	if(!validateEmail($emailInput.val())){
+		error2 = true;	
+		errors = true;
+	}
+
+	if(errors)
+	{
+		returnValue = false;
+		if(error1 === true){
+			$nameError.removeClass('display0').addClass('display1');
+		}
+		else {
+			$nameError.removeClass('display1').addClass('display0');
+		}
+		if (error2 === true){
+			$emailError.removeClass('display0').addClass('display1');
+		}
+		else {
+			$emailError.removeClass('display1').addClass('display0');
+		}
+		if (error3 === true){
+			$msgError.removeClass('display0').addClass('display1');
+		}
+		else {
+			$msgError.removeClass('display1').addClass('display0');
+		}
+		if (error4 === true){
+			$orgError.removeClass('display0').addClass('display1');
+		}
+		else {
+			$orgError.removeClass('opacity1').addClass('opacity0trans');
+		}
+
+	}
+	return returnValue;
+}
+
+//************** END Home Page Contact form **********//
+
+//************** About Us Tab Menu **********//
+
+var $tabMenu = $('#tab-menu li'),
+	$tabContentContainer = $('#tab-content-container');
+
+$tabMenu.on('click', toggleTabMenu);
+
+function toggleTabMenu(event){
+	event.preventDefault();
+	var $clickedItem = $(this);
+		$clickedContent = $clickedItem.children().data('content');
+	$clickedItem.siblings('.tab-current').removeClass('tab-current');
+	$clickedItem.addClass('tab-current');
+	$('html, body').animate({
+        scrollTop: $(".tabs").offset().top - 80
+    }, 300);
+	$tabContentContainer.children('.active').hide();
+	$('#' + $clickedContent).show().addClass('active');
+}
+
+//************** END About Us Tab Menu **********//
+
+
+//************** Plugin initialization **********//
+
+$(".rotate").textrotator({
+	animation: "fade", 
+	separator: ",", 
+	speed: 1500 
+	});
+
+var wow = new WOW ({
+    boxClass:     'wow',      
+    animateClass: 'animated', 
+    offset:       0,          
+    mobile:       true,      
+    live:         true       
+  }
+);
+
+wow.init();
+
+//************** END Plugin initialization **********//
+
+
+//************** Modal **********//
+
+$('#ack').on('click', function(event) {
+	event.preventDefault();
+	$('#ack-modal').modal('show');
+});
+
+//************** END Modal **********//
