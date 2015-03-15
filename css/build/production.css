@@ -1,18 +1,3 @@
-@charset "UTF-8";
-
-
-/*!
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license
-
-Copyright (c) 2013 Daniel Eden
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -2743,6 +2728,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: rollOut;
 }
 
+
 .rotating {
   display: inline-block;
   -webkit-transform-style: preserve-3d;
@@ -2849,15 +2835,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -o-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
   transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
 }
-/*!
- * Bootstrap v3.0.2 by @fat and @mdo
- * Copyright 2013 Twitter, Inc.
- * Licensed under http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world by @mdo and @fat.
- */
 
-/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 
 article,
 aside,
@@ -10096,6 +10074,8 @@ td.visible-print {
 }
 
 
+
+
 /*!
 * Sustainable-Nepal.CSS
 * Author: Sahaj Bajracharya
@@ -11562,11 +11542,11 @@ footer {
 	color: #e04515;
 }
 
-#ack-modal .modal-content, #ack-modal .modal-dialog {
+#ack-modal .modal-content, #ack-modal .modal-dialog, #thank .modal-content, #thank .modal-dialog  {
 	width: 680px;
 }
 @media only screen and (max-width: 63.063em) {
-	#ack-modal .modal-content, #ack-modal .modal-dialog {
+	#ack-modal .modal-content, #ack-modal .modal-dialog, #thank-modal .modal-content, #thank-modal .modal-dialog {
 		width: 100%;
 	}
 }

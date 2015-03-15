@@ -1465,11 +1465,11 @@ footer {
 	color: #e04515;
 }
 
-#ack-modal .modal-content, #ack-modal .modal-dialog {
+#ack-modal .modal-content, #ack-modal .modal-dialog, #thank .modal-content, #thank .modal-dialog  {
 	width: 680px;
 }
 @media only screen and (max-width: 63.063em) {
-	#ack-modal .modal-content, #ack-modal .modal-dialog {
+	#ack-modal .modal-content, #ack-modal .modal-dialog, #thank-modal .modal-content, #thank-modal .modal-dialog {
 		width: 100%;
 	}
 }
