@@ -350,7 +350,7 @@
                             <div class="team-col">
                                 <img src="images/Bivek.jpg" alt="">
                                 <h4>Bivek Mahat</h4>
-                                <span>Intern</span>
+                                <span>Intern, Nepal</span>
                             </div>
                         </div>
                     </div>
