@@ -197,7 +197,7 @@
                 <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="100ms">
                     <img src="images/sardu.jpg" alt="">
                     <h4>Sardu Bajracharya</h4>
-                    <span>Founder &Coordinator</span>
+                    <span>Founder & Program Director</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
@@ -234,7 +234,7 @@
                 <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="600ms">
                     <img src="images/surina.jpg" alt="">
                     <h4>Surina Gurung</h4>
-                    <span>Exchange Program Coordinator</span>
+                    <span>Exchange Program Coordinator, Nepal</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
@@ -328,6 +328,7 @@
 </footer>
 
 <div id="ack-modal" class="modal fade">
+<<<<<<< HEAD
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -352,6 +353,30 @@
                                 <span>Intern</span>
                             </div>
                         </div>
+=======
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Acknowledgements</h4>
+      </div>
+      <div class="modal-body">
+        <p><b>Sustainable Nepal would like to thank the following individuals for their support :</b></p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="team-col team">
+                        <img src="images/mohan.jpg" alt="">
+                        <h4>Mohan Duwal</h4>
+                        <span>Photographer</span>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-col">
+                        <img src="images/Bivek.jpg" alt="">
+                        <h4>Bivek Mahat</h4>
+                        <span>Intern, Nepal</span>
+>>>>>>> origin/master
                     </div>
                 </div>
             </div>
