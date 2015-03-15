@@ -122,7 +122,7 @@
         <div class="margin-top80 margin-bottom60 text-center section-heading">
             <h2 class="section-heading">GET INVOLVED</h2>
             <hr>
-            <div class="label-text">Make a difference in your community and world.</div>
+            <div class="label-text">Make a difference in your community and the world.</div>
         </div>
         <div class="row margin-bottom80">
             <div class="col-sm-4 wow animated fadeInLeft animated"  data-wow-duration="900ms" data-wow-delay="400ms">
