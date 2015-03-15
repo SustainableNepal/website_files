@@ -23,7 +23,8 @@
 		<div class="section-heading margin-top60">
 			<h5>HOW MANY TREES TO PLANT?</h5>
 		</div>
-		<p class="margin-top30">One mile in flight creates a little over one pound of carbon dioxide per passenger. So if you fly from Kathmandu to Stockholm, which is 3792.83 miles - this will lead to emission of 3792.83 pounds of carbon dioxide by each passenger. In general, a tree can absorb as much as 48 pounds of carbon dioxide per year. So to compensate 3792.83 pounds of carbon dioxide 80 trees can be planted. </p>
+		<!--p class="margin-top30">One mile in flight creates a little over one pound of carbon dioxide per passenger. So if you fly from Kathmandu to Stockholm, which is 3792.83 miles - this will lead to emission of 3792.83 pounds of carbon dioxide by each passenger. In general, a tree can absorb as much as 48 pounds of carbon dioxide per year. So to compensate 3792.83 pounds of carbon dioxide 80 trees can be planted. </p>
+		-->
 	</div>
 	<div class="mobile-project-contianer">
 		<div class="text-center section-heading">

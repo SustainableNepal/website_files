@@ -197,7 +197,7 @@
                 <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="100ms">
                     <img src="images/sardu.jpg" alt="">
                     <h4>Sardu Bajracharya</h4>
-                    <span>Founder/ Program Manager</span>
+                    <span>Founder & Coordinator</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
@@ -234,14 +234,14 @@
                 <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="600ms">
                     <img src="images/surina.jpg" alt="">
                     <h4>Surina Gurung</h4>
-                    <span>Exchange Program Coordinator</span>
+                    <span>Exchange Program Coordinator (Nepal) </span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
                 <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="700ms">
                     <img src="images/rai.jpg" alt="">
                     <h4>Pratap Rai</h4>
-                    <span>Nepal Project Officer</span>
+                    <span>Communications Coordinator</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
