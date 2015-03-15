@@ -431,7 +431,7 @@ hr{
 .parallax-bg {
     position: relative;
 	display: table;
-	background: url(images/parallax5.png) no-repeat center center fixed; 
+	background: url(../../images/parallax5.png) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -445,7 +445,7 @@ hr{
 }
 
 .parallax-bg.new{
-	background: url(images/khet.jpg) no-repeat center center fixed;
+	background: url(../../images/khet.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -495,7 +495,7 @@ and (max-device-width : 480px){
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-image: url(images/pattern.png);
+	background-image: url(../../images/pattern.png);
 	background-repeat: repeat;
 	background-color: rgba(44,62,80,0.4);
 	z-index: 2;
