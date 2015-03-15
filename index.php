@@ -111,7 +111,7 @@
         <div class="margin-top80 margin-bottom60 text-center section-heading">
             <h2 class="section-heading">CURRENT PROJECTS</h2>
             <hr>
-            <div class="label-text margin-bottom25">Organizations / individuals who share a common vision are welcome to collaborate and start projects together with us. Here are few current collaborations.</div>
+            <div class="label-text margin-bottom25">Organizations / individuals who share a common vision are welcome to collaborate and start projects together with us. Here are few of our current projects.</div>
         </div>
     </div>
     <?php include("project.php") ?>
