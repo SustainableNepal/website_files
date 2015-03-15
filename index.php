@@ -234,7 +234,7 @@
                 <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="600ms">
                     <img src="images/surina.jpg" alt="">
                     <h4>Surina Gurung</h4>
-                    <span>Exchange Program Coordinator</span>
+                    <span>Exchange Program Coordinator, Nepal</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
