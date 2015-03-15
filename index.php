@@ -130,7 +130,7 @@
                     <img class="image-responsive margin-top40" src="images/vol.png">
                     <div class="content">
                         <h3 class="margin-bottom25">VOLUNTEERS</h3>
-                        <p>If you are interested in helping Nepal in some way and volunteering in Sustainable Nepal, Please send us your application letter and you CV.</p>
+                        <p>If you are interested in helping Nepal in some way and volunteering in Sustainable Nepal, please send us your application letter and your CV.</p>
                         <a href="mailto:info@sustainablenepal.com?subject=" class="sus-link">Learn More <span class="icon-rightarrow"></span></a>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
     <div id="donate">
         <div class="container text-center">
             <h4 class="margin-bottom25">NOT READY TO GET INVOLVED?</h4>
-            <p>Consider donating to our projects. You gift will help organizations<br/>to mobilize thier resource for a better Nepal.</p>
+            <p>Consider donating to our projects. You gift will help our organization<br/>to mobilize our resources for a better Nepal.</p>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="RBZLGH4A8P4J4">
@@ -259,7 +259,7 @@
     <div class="container text-center">
         <h4 class="margin-bottom25">MAKE A DIFFERENCE. JOIN SUSTAINABLE NEPAL</h4>
         <hr>
-        <p class="text-small" style="font-size: 18px; margin-left: 15px; margin-right: 15px;">Sustainable Nepal is a non-profit umbrella orgranization for all other organizations working on sustainable development in Nepal. It focuses on connecting, supporting, strengthening the work of organizations with similar visions and bringing people together to collaborate because together we are stronger - together we can create a 'Sustainable Nepal'.</p>
+        <p class="text-small" style="font-size: 18px; margin-left: 15px; margin-right: 15px;">Sustainable Nepal is a non-profit umbrella organization for all other organizations working on sustainable development in Nepal. It focuses on connecting, supporting, strengthening the work of organizations with similar visions and bringing people together to collaborate because together we are stronger - together we can create a 'Sustainable Nepal'.</p>
     </div>
 </div>
 
@@ -309,7 +309,7 @@
                 <div class="country-code right" style="margin-bottom: 0;">
                     <h5 class="footer-title">NEPAL</h5>
                     <p style="height: 100%;">Ganeshbasti, Maharajgunj, Kathmandu</p>
-                    <p><span class="phone"></span> <span>+977 9841218779</span></p>
+                    <p><span class="phone"></span> <span>+977 9841 218779</span></p>
                     <p><span class="email"></span> <span style="margin-top:0;">info@sustainablenepal.com</span></p>
                </div>
             </div>
@@ -336,7 +336,7 @@
         <h4 class="modal-title">Acknowledgements</h4>
       </div>
       <div class="modal-body">
-        <p><b>Sustainable Nepal would like to Thank the following individuals for their support :</b></p>
+        <p><b>Sustainable Nepal would like to thank the following individuals for their support :</b></p>
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
