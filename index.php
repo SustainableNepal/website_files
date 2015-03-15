@@ -49,7 +49,7 @@
             <hr>
             <div class="label-text margin-bottom25">Our mission is to accelerate the transition and growth of a new green economic paradigm in Nepal to achieve goals of sustainable development.</div>
             <!-- <p class="text-small about-paragraph">Sustainable Nepal is a non-profit umbrella orgranization for all other organizations working on sustainable development in Nepal. It focuses on connecting, supporting, strengthening the work of organizations with similar visions and bringing people together to collaborate because together we are stronger - together we can create a 'Sustainable Nepal'.</p> -->
-            <p class="text-small about-paragraph">Sustainable Nepal was established on the occasion of World Environment Day - June 5, 2012. This organization is aimed at making every effort to accelerate progress in achieving ecological, economical and social sustainable development of Nepal.</p>
+            <p class="text-small about-paragraph">Sustainable Nepal was established on the occasion of World Environment Day - June 5, 2012. This organization aims to foster ecological, economical and social sustainable development of Nepal though projects that combines knowledge and action, both on national and international levels, to help create conditions for a sustainable future.</p>
         </div>
     </div>
     <img src="images/illustation1.png" style="width:100%;">
@@ -197,7 +197,7 @@
                 <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="100ms">
                     <img src="images/sardu.jpg" alt="">
                     <h4>Sardu Bajracharya</h4>
-                    <span>Founder & Coordinator</span>
+                    <span>Founder &Coordinator</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
@@ -234,7 +234,7 @@
                 <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="600ms">
                     <img src="images/surina.jpg" alt="">
                     <h4>Surina Gurung</h4>
-                    <span>Exchange Program Coordinator (Nepal) </span>
+                    <span>Exchange Program Coordinator</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
