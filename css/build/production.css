@@ -11396,7 +11396,7 @@ footer {
 }
 
 .country-code .phone {
-	background: url(images/phone.png) no-repeat;
+	background: url(../../images/phone.png) no-repeat;
 	height: 40px;
 	width: 40px;
 	display: inline-block;
@@ -11404,7 +11404,7 @@ footer {
 }
 
 .country-code .email {
-	background: url(images/email.png) no-repeat;
+	background: url(../../images/email.png) no-repeat;
 	height: 40px;
 	width: 40px;
 	display: inline-block;
