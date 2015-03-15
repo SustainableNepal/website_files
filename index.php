@@ -66,13 +66,12 @@
             <article id="tab-content-container" class="margin-top80 margin-bottom80">
                 <section id="goal-content" class="clearfix section-heading active">
                     <div class="col-sm-6">
-                        <p><b>Sustainable Nepal is a non-profit and voluntary organisation. We work closely with individuals within organisations in :</b></p>
-                        <ul claa="animate zoomIn">
-                            <li>Development of projects that contribute to sustainable solutions.</li>
-                            <li>Education and distribution of information about sustainable development via online platforms and social media.</li>
-                            <li>Achieve real and long-term changes at the local level.</li>
-                            <li>Inspire, set examples and provide lessons for similar projects.</li>
-                            <li>Influence policy makers to take decisions towards the overall goal.</li>
+                        <p><b>The organization’s main goal is to promote environmental, economical and social sustainable development in Nepal. Our goals are to :</b></p>
+                        <ul>
+                            <li>Raise awareness of environmental problems and sustainable development in general in Nepal.</li>
+                            <li>Communicate and reinforce individual's sense of the ability to influence and change towards sustainable development.</li>
+                            <li>Research on the environmental, social and economic problems and their possible solutions.</li>
+                            <li>Development and application of digital tools that facilitate and inspire communication and dissemination of information between different stakeholders.</li>
                         </ul>
                     </div>
                     <div class="col-sm-6 text-center">
@@ -89,12 +88,13 @@
                 </section>
                 <section id="approach-content" class="clearfix section-heading" style="display:none;">
                     <div class="col-sm-6">
-                        <p><b>The organization’s main goal is to promote environmental, economical and social sustainable development in Nepal. Our goals are to :</b></p>
-                        <ul>
-                            <li>Raise awareness of environmental problems and sustainable development in general in Nepal.</li>
-                            <li>Communicate and reinforce individual's sense of the ability to influence and change towards sustainable development.</li>
-                            <li>Research on the environmental, social and economic problems and their possible solutions.</li>
-                            <li>Development and application of digital tools that facilitate and inspire communication and dissemination of information between different stakeholders.</li>
+                        <p><b>Sustainable Nepal is a non-profit and voluntary organisation. We work closely with individuals within organisations in :</b></p>
+                        <ul claa="animate zoomIn">
+                            <li>Development of projects that contribute to sustainable solutions.</li>
+                            <li>Education and distribution of information about sustainable development via online platforms and social media.</li>
+                            <li>Achieve real and long-term changes at the local level.</li>
+                            <li>Inspire, set examples and provide lessons for similar projects.</li>
+                            <li>Influence policy makers to take decisions towards the overall goal.</li>
                         </ul>
                     </div>
                     <div class="col-sm-6 text-center">
