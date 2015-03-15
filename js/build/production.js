@@ -3122,7 +3122,6 @@ function getContactData(event){
 	        type: "get",
 	        success: function(){
 	           $('#thank-modal').modal('show');
-			   $('#email-sucess').hide();
 			   $nameInput.val("");
 			   $emailInput.val("");
 			   $messageInput.val("");
@@ -3303,7 +3302,7 @@ $(".rotate").textrotator({
 	animation: "fade", 
 	separator: ",", 
 	speed: 1500 
-	});
+});
 
 var wow = new WOW ({
     boxClass:     'wow',      

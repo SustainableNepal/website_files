@@ -285,7 +285,6 @@
                         <div id="error2" class="display0 margin-top10 float-right" style="color: #e04515; clear: both;"><i>* Please Enter Your Valid Email</i></div>
                         <div id="error4" class="display0 margin-top10 float-right" style="color: #e04515; clear: both;"><i>* Please Enter Your Organization Name</i></div>
                         <div id="error3" class="display0 margin-top10 float-right" style="color: #e04515; clear: both;"><i>* Please Enter Your Message</i></div>
-                        <div id="email-sucess" class="display0 margin-top10 float-right" style="color: #e04515; clear: both;"><i>Your Message has been sent. Thank You.</i></div>
                     </div>
                     <a id="contact-submit" href="" class="btn btn-default float-right new">SEND</a>
                 </div>
@@ -329,49 +328,51 @@
 </footer>
 
 <div id="ack-modal" class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Acknowledgements</h4>
-      </div>
-      <div class="modal-body">
-        <p><b>Sustainable Nepal would like to thank the following individuals for their support :</b></p>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="team-col team">
-                        <img src="images/mohan.jpg" alt="">
-                        <h4>Mohan Duwal</h4>
-                        <span>Photographer</span>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="team-col">
-                        <img src="images/Bivek.jpg" alt="">
-                        <h4>Bivek Mahat</h4>
-                        <span>Intern</span>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Acknowledgements</h4>
+            </div>
+            <div class="modal-body">
+                <p><b>Sustainable Nepal would like to thank the following individuals for their support :</b></p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="team-col team">
+                                <img src="images/mohan.jpg" alt="">
+                                <h4>Mohan Duwal</h4>
+                                <span>Photographer</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="team-col">
+                                <img src="images/Bivek.jpg" alt="">
+                                <h4>Bivek Mahat</h4>
+                                <span>Intern</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+        </div>
+    </div>
+</div>
 
 <div id="thank-modal" class="modal fade">
-  <div class="modal-dialog" style="width: 500px;">
-    <div class="modal-content" style="width: 500px;">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Thank You</h4>
-      </div>
-      <div class="modal-body">
-        <p class="margin-bottom25">Thank You for your message. We will be in touch with you shortly.</p>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Thank You</h4>
+            </div>
+            <div class="modal-body">
+                <p class="margin-bottom25">Thank You for your message. We will be in touch with you shortly.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php include("footer.php") ?>
 
 
