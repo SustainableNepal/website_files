@@ -197,7 +197,7 @@
                 <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="100ms">
                     <img src="images/sardu.jpg" alt="">
                     <h4>Sardu Bajracharya</h4>
-                    <span>Founder &Coordinator</span>
+                    <span>Founder & Program Director</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
@@ -350,7 +350,7 @@
                     <div class="team-col">
                         <img src="images/Bivek.jpg" alt="">
                         <h4>Bivek Mahat</h4>
-                        <span>Intern</span>
+                        <span>Intern, Nepal</span>
                     </div>
                 </div>
             </div>
