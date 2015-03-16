@@ -115,7 +115,9 @@
             <div class="label-text margin-bottom25">Organizations / individuals who share a common vision are welcome to collaborate and start projects together with us. Here are few of our current projects.</div>
         </div>
     </div>
+
     <?php include("project.php") ?>
+
 </section>
 
 <section id="involved">
@@ -375,6 +377,3 @@
 </div>
 
 <?php include("footer.php") ?>
-
-
-
