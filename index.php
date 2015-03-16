@@ -262,7 +262,7 @@
     <div class="container text-center">
         <h4 class="margin-bottom25">MAKE A DIFFERENCE. JOIN SUSTAINABLE NEPAL</h4>
         <hr>
-        <p class="text-small" style="font-size: 18px; margin-left: 15px; margin-right: 15px;">Sustainable Nepal is a non-profit umbrella organization for all other organizations working on sustainable development in Nepal. It focuses on connecting, supporting, strengthening the work of organizations with similar visions and bringing people together to collaborate because together we are stronger - together we can create a 'Sustainable Nepal'.</p>
+        <p class="text-small" style="font-size: 18px; margin-left: 15px; margin-right: 15px;">Sustainable Nepal serves as umbrella organization for all other organizations working on sustainable development in Nepal. It focuses on connecting, supporting, strengthening the work of organizations with similar visions and bringing people together to collaborate because together we are stronger - together we can create a 'Sustainable Nepal'.</p>
     </div>
 </div>
 
