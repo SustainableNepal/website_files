@@ -64,7 +64,7 @@
         </nav>
         <div class="content-wrap container">
             <article id="tab-content-container" class="margin-top80 margin-bottom80">
-                <section id="goal-content" class="clearfix section-heading active">
+                <section id="goal-content" class="sub-tab-content clearfix section-heading active">
                     <div class="col-sm-6">
                         <p><b>The organization’s main goal is to promote environmental, economical and social sustainable development in Nepal. Our goals are to :</b></p>
                         <ul>
@@ -74,19 +74,20 @@
                             <li>Development and application of digital tools that facilitate and inspire communication and dissemination of information between different stakeholders.</li>
                         </ul>
                     </div>
-                    <div class="col-sm-6 text-center">
-                        <img class="margin-top10" src="images/Ecology-18.png">
+                    <div class="col-sm-6 text-center v-box">
+                        <img src="images/Ecology-18.png">
                     </div>
                 </section>
-                <section id="vision-content" class="clearfix section-heading" style="display:none;">
-                    <div class="col-sm-6 text-center">
-                         <img src="images/Ecology-21.png" style="margin-top: -23px;">
+                <section id="vision-content" class="sub-tab-content clearfix section-heading" style="display:none;">
+                    <div class="col-sm-6 text-center v-box">
+                         <img src="images/Ecology-21.png">
                     </div>
                     <div class="col-sm-6">
-                        <p>At Sustainable Nepal, we are driven by our vision to make Nepal a better place to live in. Our work is primarily focused at the grassroots level.  An important part of the change process is to visualize local changes and how each contributes unique change in a larger perspective. It is hoped that this in turn will influence and inspire other stakeholders and decision makers to drive change towards sustainable development - both in Nepal and abroad.  </p>
+                        <p>At Sustainable Nepal, we are driven by our vision to make Nepal a better place to live in. Our work is primarily focused at the grassroots level. An important part of the change process is to visualize local changes and how each contributes unique change in a larger perspective.</p>
+                        <p> It is hoped that this in turn will influence and inspire other stakeholders and decision makers to drive change towards sustainable development - both in Nepal and abroad.  </p>
                     </div>
                 </section>
-                <section id="approach-content" class="clearfix section-heading" style="display:none;">
+                <section id="approach-content" class="sub-tab-content clearfix section-heading" style="display:none;">
                     <div class="col-sm-6">
                         <p><b>Sustainable Nepal is a non-profit and voluntary organisation. We work closely with individuals within organisations in :</b></p>
                         <ul claa="animate zoomIn">
@@ -97,8 +98,8 @@
                             <li>Influence policy makers to take decisions towards the overall goal.</li>
                         </ul>
                     </div>
-                    <div class="col-sm-6 text-center">
-                        <img class="margin-top10" src="images/Ecology-09.png" style="margin-top: 65px;">
+                    <div class="col-sm-6 text-center v-box">
+                        <img src="images/Ecology-09.png">
                     </div>
                 </section>
             </article>

@@ -1484,3 +1484,23 @@ footer {
 	margin-bottom: 15px;
 	font-size: 25px;
 }
+
+.sub-tab-content {
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.v-box {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+}
