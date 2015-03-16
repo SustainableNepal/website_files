@@ -66,7 +66,7 @@
             <article id="tab-content-container" class="margin-top80 margin-bottom80">
                 <section id="goal-content" class="sub-tab-content clearfix section-heading active">
                     <div class="col-sm-6">
-                        <p><b>The organization’s main goal is to promote environmental, economical and social sustainable development in Nepal. Our goals are to :</b></p>
+                        <p><b>The organization’s main goal is to promote environmental, economical and social sustainable development in Nepal. Our specific goals are to :</b></p>
                         <ul>
                             <li>Raise awareness of environmental problems and sustainable development in general in Nepal.</li>
                             <li>Communicate and reinforce individual's sense of the ability to influence and change towards sustainable development.</li>
