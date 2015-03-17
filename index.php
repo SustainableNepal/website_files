@@ -278,7 +278,7 @@
             in collaborating and making a Sustainable Change
         </p>
         <div class="row margin-top40 text-center">
-            <form class="form-horizontal" id="contact-form" novalidate="novalidate">
+            <form class="form-horizontal" id="contact-form" novalidate="novalidate" action="contact.php" method="POST">
                 <div class="form-contact float-left">
                     <input type="text" name="name" id="name" placeholder="Name" required="true" class="form-control input-lg">
                     <input type="text" name="email" id="email" placeholder="Email" required="true" class="form-control input-lg margin-top20">
@@ -292,7 +292,7 @@
                         <div id="error4" class="display0 margin-top10 float-right" style="color: #e04515; clear: both;"><i>* Please Enter Your Organization Name</i></div>
                         <div id="error3" class="display0 margin-top10 float-right" style="color: #e04515; clear: both;"><i>* Please Enter Your Message</i></div>
                     </div>
-                    <a id="contact-submit" href="" class="btn btn-default float-right new">SEND</a>
+                    <button id="contact-submit" type="submit" class="btn btn-default float-right new">SEND</button>
                 </div>
             </form>
         </div>
