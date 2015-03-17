@@ -106,7 +106,7 @@ function getContactData(event){
 
     if(validateContactForm()){
         $.ajax({
-	        url: "",
+	        url: "api/emailcontactfrom",
 	        type: "get",
 	        success: function(){
 	           $('#thank-modal').modal('show');
