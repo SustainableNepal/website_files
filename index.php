@@ -17,7 +17,7 @@
 </section>
 
 <section id="navigation">
-    <div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 72px;"><div class="navbar navbar-inverse navbar-static-top " role="navigation">
+    <div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 72px;"><div class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -278,7 +278,7 @@
             in collaborating and making a Sustainable Change
         </p>
         <div class="row margin-top40 text-center">
-            <form class="form-horizontal" id="contact-form" novalidate="novalidate" action="contact.php" method="POST">
+            <form class="form-horizontal" id="contact-form" novalidate="novalidate"><!-- action="api/emailcontactform" method="POST"-->
                 <div class="form-contact float-left">
                     <input type="text" name="name" id="name" placeholder="Name" required="true" class="form-control input-lg">
                     <input type="text" name="email" id="email" placeholder="Email" required="true" class="form-control input-lg margin-top20">
