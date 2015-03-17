@@ -103,7 +103,6 @@ function getContactData(event){
         'organization': $('input[name=organization]').val(),
         'message' : $('textarea[name=message]').val()
     };
-    debugger;
     if (validateContactForm()) {
         $.ajax({
 	        url: 'http://www.sustainablenepal.com/api/emailcontactform?name='+ post_data.name +'&useremail='+ post_data.email +'&organization='+post_data.organization+'&message='+post_data.message,
