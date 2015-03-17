@@ -3118,13 +3118,8 @@ function getContactData(event){
     debugger;
     if (validateContactForm()) {
         $.ajax({
-<<<<<<< HEAD
 	        url: 'http://www.sustainablenepal.com/api/emailcontactfrom?name='+ post_data.name +'&useremail='+ post_data.email +'&organization='+post_data.organization+'&message='+post_data.message,
 	        type: "POST",
-=======
-	        url: "api/emailcontactfrom",
-	        type: "get",
->>>>>>> origin/master
 	        success: function(){
 	           $('#thank-modal').modal('show');
 			   $nameInput.val("");
