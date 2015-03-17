@@ -333,6 +333,7 @@
     </div>
 </footer>
 
+<!--Modal For the Home Page-->
 <div id="ack-modal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -380,3 +381,4 @@
 </div>
 
 <?php include("footer.php") ?>
+<!--END Modal For the Home Page-->
