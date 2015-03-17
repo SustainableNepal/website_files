@@ -3287,7 +3287,7 @@ function toggleTabMenu(event){
 	$clickedItem.siblings('.tab-current').removeClass('tab-current');
 	$clickedItem.addClass('tab-current');
 	$('html, body').animate({
-        scrollTop: $(".tabs").offset().top - 80
+        scrollTop: $(".tabs").offset().top - 70
     }, 300);
 	$tabContentContainer.children('.active').hide();
 	$('#' + $clickedContent).show().addClass('active');
