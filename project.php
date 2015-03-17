@@ -42,7 +42,7 @@
     <figure class="effect-layla">
         <img src="images/nepal123.jpg" alt="img04"/>
         <figcaption>
-            <div>My Nepal -<span> My Pride</span></div>
+            <div>Research<span> Nepal</span></div>
             <p>Sustainable Nepal focuses on the priorities of Nepalese people living in Nepal and rest of the world and help build a collective vision to plan development agendas to make Nepal a better place to live in.<br/><span class="icon-rightarrow"></span></p>
             <a href="mynepal.php">View more</a>
         </figcaption>           

@@ -13,7 +13,7 @@
 	</div>
 	<div class="fixed-section right right-content">
 		<div class="section-heading">
-			<h2 class="margin-top120" style="color: #55A43D;">MY NEPAL - MY PRIDE</h2>
+			<h2 class="margin-top120" style="color: #55A43D;">RESEARCH NEPAL</h2>
 		</div>
 		<div class="margin-top30 secondary-title">
 			<p class="margin-bottom40">This project aims to conduct research on various fundamental and critical development issues in Nepal to help in improving social and environmental conditions in Nepal. </p>

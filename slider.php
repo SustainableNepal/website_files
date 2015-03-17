@@ -60,7 +60,7 @@ if (isMobile()) {
 				<div class="each-slider" style="transform: translateX(0px); opacity: 1; transition: transform 500ms; -webkit-transition: transform 500ms;">
 					<img src="/images/nepal123.jpg">
 					<div class="parallax-overlay" style="top: 0;"></div>
-					<div class="slider-title">My Nepal - My pride</div>
+					<div class="slider-title">Research Nepal</div>
 				</div>
 			</a>
 		</div>
