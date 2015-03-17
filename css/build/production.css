@@ -10137,6 +10137,10 @@ p {
 
 .input-lg,button,input {
     border-radius: 0;
+    -webkit-box-shadow: none;
+   	box-shadow: none; 
+   	-webkit-transition: none; 
+   	transition: none; 
 }
 
 h1, h2, h3, h4, h5, h6 {
