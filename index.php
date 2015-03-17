@@ -52,7 +52,7 @@
             <p class="text-small about-paragraph">Sustainable Nepal was established on the occasion of World Environment Day - June 5, 2012. This organization aims to foster ecological, economical and social sustainable development of Nepal though projects that combines knowledge and action, both on national and international levels, to help create conditions for a sustainable future.</p>
         </div>
     </div>
-    <img src="images/illustation1.png" style="width:100%;">
+    <img src="images/illustation1.png" style="width:100%; margin-top:-1px;">
     
     <section class="tabs tabs-style-iconbox">
         <nav id="tab-menu">
@@ -197,28 +197,28 @@
         </div>
         <div class="row">
             <div class="col-sm-3">
-                <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="100ms">
+                <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="100ms">
                     <img src="images/sardu.jpg" alt="">
                     <h4>Sardu Bajracharya</h4>
                     <span>Founder & Program Director</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
-                <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="200ms">
+                <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="200ms">
                     <img src="images/johan.jpg" alt="">
                     <h4>Johan Lahti</h4>
                     <span>Geographic IT Developer</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
-                <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="400ms">
+                <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="400ms">
                     <img src="images/tobjorn.jpg" alt="">
                     <h4>Torbjörn Lahti</h4>
                     <span>Advisor</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
-                <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="300ms">
+                <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="300ms">
                     <img src="images/sahaj.jpg" alt="">
                     <h4>Sahaj Bajracharya</h4>
                     <span>Web Application Developer</span>
@@ -227,28 +227,28 @@
         </div><div class="divided-50"></div>
         <div class="row">
             <div class="col-sm-3">
-                <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="500ms">
+                <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="500ms">
                     <img src="images/Srijan.jpg" alt="">
                     <h4>Srijan Tamrakar</h4>
                     <span>Designer</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
-                <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="600ms">
+                <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="600ms">
                     <img src="images/surina.jpg" alt="">
                     <h4>Surina Gurung</h4>
                     <span>Exchange Program Coordinator, Nepal</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
-                <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="700ms">
+                <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="700ms">
                     <img src="images/rai.jpg" alt="">
                     <h4>Pratap Rai</h4>
                     <span>Communications Coordinator</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
-                <div class="team-col wow animated fadeInLeft"  data-wow-duration="700ms" data-wow-delay="800ms">
+                <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="800ms">
                     <img src="images/Friederike.jpg" alt="">
                     <h4>Friederike Arndt</h4>
                     <span>Designer</span>
