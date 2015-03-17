@@ -288,7 +288,7 @@
                     <textarea name="message" placeholder="Message" id="message" required="true" rows="8" class="form-control input-lg" style="height: 175px;"></textarea>
                     <div class="clearfix">
                         <div id="error1" class="display0 margin-top10 float-right" style="color: #e04515; clear: both;"><i>* Please Enter Your Name</i></div>
-                        <div id="error2" class="display0 margin-top10 float-right" style="color: #e04515; clear: both;"><i>* Please Enter Your Valid Email</i></div>
+                        <div id="error2" class="display0 margin-top10 float-right" style="color: #e04515; clear: both;"><i>* Please Enter Your Valid Email Address</i></div>
                         <div id="error4" class="display0 margin-top10 float-right" style="color: #e04515; clear: both;"><i>* Please Enter Your Organization Name</i></div>
                         <div id="error3" class="display0 margin-top10 float-right" style="color: #e04515; clear: both;"><i>* Please Enter Your Message</i></div>
                     </div>
