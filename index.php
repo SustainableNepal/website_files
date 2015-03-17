@@ -292,7 +292,7 @@
                         <div id="error4" class="display0 margin-top10 float-right" style="color: #e04515; clear: both;"><i>* Please Enter Your Organization Name</i></div>
                         <div id="error3" class="display0 margin-top10 float-right" style="color: #e04515; clear: both;"><i>* Please Enter Your Message</i></div>
                     </div>
-                    <button id="contact-submit" type="submit" class="btn btn-default float-right new">SEND</button>
+                    <a href="" id="contact-submit" class="btn btn-default float-right new">SEND</a>
                 </div>
             </form>
         </div>
