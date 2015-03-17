@@ -3118,7 +3118,7 @@ function getContactData(event){
     debugger;
     if (validateContactForm()) {
         $.ajax({
-	        url: 'http://www.sustainablenepal.com/api/emailcontactfrom?name='+ post_data.name +'&useremail='+ post_data.email +'&organization='+post_data.organization+'&message='+post_data.message,
+	        url: 'http://www.sustainablenepal.com/api/emailcontactFrom?name='+ post_data.name +'&useremail='+ post_data.email +'&organization='+post_data.organization+'&message='+post_data.message,
 	        type: "POST",
 	        success: function(){
 	           $('#thank-modal').modal('show');
