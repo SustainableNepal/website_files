@@ -233,7 +233,7 @@
                 <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="500ms">
                     <img src="images/Srijan.jpg" alt="">
                     <h4>Srijan Tamrakar</h4>
-                    <span>Designer</span>
+                    <span>Graphic Designer</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
