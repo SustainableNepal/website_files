@@ -2,7 +2,6 @@
 <?php include("multipage_header.php") ?>
 
 <?php
-
 // assign all the required links and header text for each news in the $gridArray
 // imageUrl : the main image Url for the news, make sure the images are stored in /images
 // newLink: the redirect link which will take you to the news page, save the news page under /news
@@ -24,15 +23,15 @@
 
 <div class="clearfix margin-top10">
 	<?php
-		foreach ($gridArrays as $gridArray) {
+		foreach ($gridArrays as $individualGrid) {
 	?>
 			<div class="quarter-grid">
-				<a href="/news/<?php echo $gridArray['newsLink']; ?>">
-					<div style="background-image:url(images/<?php echo $gridArray['imageUrl']; ?>)" class="quarter-grid-main-img"></div>
+				<a href="news/<?php echo $individualGrid['newsLink']; ?>">
+					<div style="background-image:url(images/<?php echo $individualGrid['imageUrl']; ?>)" class="quarter-grid-main-img"></div>
 					<div class="quarter-grid-overlay">
 						<div>
-							<h3 class=""><strong><?php echo $gridArray['date']; ?></strong></h3>
-			    			<h2 class=""><?php echo $gridArray['title']; ?></h2>
+							<h3 class=""><strong><?php echo $individualGrid['date']; ?></strong></h3>
+			    			<h2 class=""><?php echo $individualGrid['title']; ?></h2>
 			  			</div>
 					</div>
 			  	</a>

@@ -26,7 +26,7 @@
                     <li><a href="/#involved">Get Involved</a></li>
                     <li><a href="/#team">Team</a></li>
                     <li><a href="/#page-contact">Contact</a></li>
-                    <li class="<?php if ($isNewsPage) { echo 'active'; } ?>"><a href="news.php">news</a></li>
+                    <!-- <li class="<?php if ($isNewsPage) { echo 'active'; } ?>"><a href="news.php">news</a></li> -->
                 </ul>
             </div>
         </div>
