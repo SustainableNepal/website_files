@@ -244,3 +244,68 @@
 .slider-title {
 	word-wrap: break-word;
 }
+
+
+/******* Grid Layout *******/
+
+.quarter-grid {
+	float: left;
+  	width: 25.0000%;
+}
+
+.quarter-grid a {
+	overflow: hidden;
+  	display: block;
+  	color: #ffffff;
+  	position: relative;
+}
+
+.quarter-grid-main-img {
+	height: 0;
+  	padding-bottom: 100%;
+  	background-size: cover;
+ 	background-position: 50%;
+}
+
+.quarter-grid-overlay {
+	background: rgba(0,0,0,0.50);
+	top: 0;
+  	right: 0;
+  	left: 0;
+  	bottom: 0;
+  	position: absolute;
+  	padding: 20px;
+}
+
+.quarter-grid h3 {
+  	font-family: "Proxima Nova-semibold";
+  	font-size: 12px;
+  	margin: 0;
+  	text-transform: uppercase;
+}
+
+.quarter-grid h2 {
+  	font-family: "Proxima Nova-semibold";
+}
+
+@media only screen and (max-width: 1200px) {
+	.quarter-grid {
+		width: 33.33%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.quarter-grid {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.quarter-grid {
+		width: 100%;
+	}
+	.quarter-grid-main-img {
+		padding-bottom: 50%;
+	}
+}
+

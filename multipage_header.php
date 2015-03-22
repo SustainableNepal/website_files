@@ -1,13 +1,11 @@
-<!-- <nav class="secondary-nav">
-  <div class="nav-inner">
-    <span><a href="/#home">Home</a></span>
-    <span><a href="/#about">About</a></span>
-    <span><a href="/#involved">get involved</a></span>
-    <span><a href="/#page-contact">contact</a></span>
-    <span><a href="/#team">team</a></span>
-  </div>
-</nav> -->
-
+<?php 
+    if (strstr($_SERVER['REQUEST_URI'], 'news')) { 
+        $isNewsPage = true;
+    } else {
+        $isNewsPage = false;
+    }
+?>
+        
 <section id="navigation">
     <div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 72px;"><div class="navbar navbar-inverse navbar-static-top " role="navigation">
         <div class="container">
@@ -22,12 +20,13 @@
             </div>
             <div class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
                 <ul class="nav navbar-nav navbar-right scrollto">
-                    <li class=""><a href="/#home">Home</a></li>
-                    <li class=""><a href="/#about">About</a></li>
-                    <li class="active"><a href="/#project">Current Projects</a></li>
-                    <li class=""><a href="/#involved">Get Involved</a></li>
+                    <li><a href="/#home">Home</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li class="<?php if (!$isNewsPage) { echo 'active'; } ?>"><a href="/#project">Current Projects</a></li>
+                    <li><a href="/#involved">Get Involved</a></li>
                     <li><a href="/#team">Team</a></li>
-                    <li class=""><a href="/#page-contact">Contact</a></li>
+                    <li><a href="/#page-contact">Contact</a></li>
+                    <li class="<?php if ($isNewsPage) { echo 'active'; } ?>"><a href="news.php">news</a></li>
                 </ul>
             </div>
         </div>
