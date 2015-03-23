@@ -10,7 +10,7 @@
 // keep on adding the new one at the top of the array and it will show top one first and bottom one last. 
 
 	$gridArrays = [
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 19 2015', 'title' => 'News Main Header 1', 'newsLink' => 'ac.cm'],
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 19 2015', 'title' => 'News Main Header 1', 'newsLink' => 'sn_news_1.php'],
         ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 11 2015', 'title' => 'News Main Header 2', 'newsLink' => 'ac.cm'],
         ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 12 2015', 'title' => 'News Main Header 3', 'newsLink' => 'ac.cm'],
         ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 13 2015', 'title' => 'News Main Header 4', 'newsLink' => 'ac.cm'],
