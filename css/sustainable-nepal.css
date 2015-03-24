@@ -67,7 +67,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Proxima Nova-semibold', 'Dosis', sans-serif;
     font-weight: 700;
     line-height: 1;
 }
@@ -227,6 +227,8 @@ b, strong{
 
 .margin-top40 { margin-top: 40px;}
 
+.margin-top50 { margin-top: 50px;}
+
 .margin-top60 { margin-top: 60px;}
 
 .margin-top80 { margin-top: 80px;}
@@ -332,7 +334,7 @@ hr{
 
 
 
-.opacity0{
+.opacity0 {
     opacity: 0;
 }
 

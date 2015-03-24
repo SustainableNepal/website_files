@@ -314,6 +314,32 @@
 
 /******* Individual News Page *******/
 
+.individual-news-cont h6 a, .individual-news-cont h6 a:hover {
+	text-decoration: none;
+}
+
+.individual-news-cont h6 a {
+	color: #74777b;;
+}
+
+
+.individual-news-cont h6 a:hover { 
+	text-decoration: underline;
+}
+
+.individual-news-cont h1 {
+	font-size: 30px;
+}
+
+.inner-individual-news-cont {
+	padding-left: 65px;
+	padding-right: 65px;
+}
+
+.individual-news-cont h5 { 
+	margin-bottom: 60px;
+	font-size: 14px;
+}
 /******* END Individual News Page *******/
 
 

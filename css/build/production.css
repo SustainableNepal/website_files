@@ -10144,7 +10144,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Proxima Nova-semibold', 'Dosis', sans-serif;
     font-weight: 700;
     line-height: 1;
 }
@@ -10304,6 +10304,8 @@ b, strong{
 
 .margin-top40 { margin-top: 40px;}
 
+.margin-top50 { margin-top: 50px;}
+
 .margin-top60 { margin-top: 60px;}
 
 .margin-top80 { margin-top: 80px;}
@@ -10409,7 +10411,7 @@ hr{
 
 
 
-.opacity0{
+.opacity0 {
     opacity: 0;
 }
 
@@ -11928,6 +11930,32 @@ footer {
 
 /******* Individual News Page *******/
 
+.individual-news-cont h6 a, .individual-news-cont h6 a:hover {
+	text-decoration: none;
+}
+
+.individual-news-cont h6 a {
+	color: #74777b;;
+}
+
+
+.individual-news-cont h6 a:hover { 
+	text-decoration: underline;
+}
+
+.individual-news-cont h1 {
+	font-size: 30px;
+}
+
+.inner-individual-news-cont {
+	padding-left: 65px;
+	padding-right: 65px;
+}
+
+.individual-news-cont h5 { 
+	margin-bottom: 60px;
+	font-size: 14px;
+}
 /******* END Individual News Page *******/
 
 
