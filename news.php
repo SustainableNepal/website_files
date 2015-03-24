@@ -11,13 +11,13 @@
 
 	$gridArrays = [
         ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 19 2015', 'title' => 'News Main Header 1', 'newsLink' => 'sn_news_1.php'],
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 11 2015', 'title' => 'News Main Header 2', 'newsLink' => 'ac.cm'],
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 12 2015', 'title' => 'News Main Header 3', 'newsLink' => 'ac.cm'],
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 13 2015', 'title' => 'News Main Header 4', 'newsLink' => 'ac.cm'],
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 14 2015', 'title' => 'News Main Header 5', 'newsLink' => 'ac.cm'],
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 15 2015', 'title' => 'News Main Header 6', 'newsLink' => 'ac.cm'],
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 16 2015', 'title' => 'News Main Header 7', 'newsLink' => 'ac.cm'],
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 17 2015', 'title' => 'News Main Header 8', 'newsLink' => 'ac.cm']
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 11 2015', 'title' => 'News Main Header 2', 'newsLink' => 'sn_news_1.php'],
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 12 2015', 'title' => 'News Main Header 3', 'newsLink' => 'sn_news_1.php'],
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 13 2015', 'title' => 'News Main Header 4', 'newsLink' => 'sn_news_1.php'],
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 14 2015', 'title' => 'News Main Header 5', 'newsLink' => 'sn_news_1.php'],
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 15 2015', 'title' => 'News Main Header 6', 'newsLink' => 'sn_news_1.php'],
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 16 2015', 'title' => 'News Main Header 7', 'newsLink' => 'sn_news_1.php'],
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 17 2015', 'title' => 'News Main Header 8', 'newsLink' => 'sn_news_1.php']
     ];
 ?>
 
