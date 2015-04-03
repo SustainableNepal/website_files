@@ -21,42 +21,42 @@ if (isMobile()) {
 </div>
 	<div class="multiple-slider height0">
 		<div class="multiple-slider-cont mobile-slider">
-			<a class="slider-link" href="/foresthimalaya.php">
+			<a class="slider-link" href="/foresthimalaya">
 				<div class="each-slider" style="transform: translateX(0px); opacity: 1; transition: transform 500ms; -webkit-transition: transform 500ms;">
 					<img src="/images/slide-bg.jpg">
 					<div class="parallax-overlay" style="top: 0;"></div>
 					<div class="slider-title">Forest Himalaya</div>
 				</div>
 			</a>
-			<a class="slider-link" href="/sustainablemap.php">
+			<a class="slider-link" href="/sustainablemap">
 				<div class="each-slider" style="transform: translateX(0px); opacity: 1; transition: transform 500ms; -webkit-transition: transform 500ms;">
 					<img src="/images/world_map.jpg">
 					<div class="parallax-overlay" style="top: 0;"></div>
 					<div class="slider-title">Sustainable Map</div>
 				</div>
 			</a>
-			<a class="slider-link" href="/flygreen.php">
+			<a class="slider-link" href="/flygreen">
 				<div class="each-slider" style="transform: translateX(0px); opacity: 1; transition: transform 500ms; -webkit-transition: transform 500ms;">
 					<img src="/images/Paragliding_Nepal.jpg">
 					<div class="parallax-overlay" style="top: 0;"></div>
 					<div class="slider-title">Fly Green</div>
 				</div>
 			</a>
-			<a class="slider-link" href="/greenliving.php">
+			<a class="slider-link" href="/greenliving">
 				<div class="each-slider" style="transform: translateX(0px); opacity: 1; transition: transform 500ms; -webkit-transition: transform 500ms;">
 					<img src="/images/greenliving.jpg">
 					<div class="parallax-overlay" style="top: 0;"></div>
 					<div class="slider-title">Green Living</div>
 				</div>
 			</a>
-			<a class="slider-link" href="/sustainableexchange.php">
+			<a class="slider-link" href="/sustainableexchange">
 				<div class="each-slider" style="transform: translateX(0px); opacity: 1; transition: transform 500ms; -webkit-transition: transform 500ms;">
 					<img src="/images/exchange.jpg">
 					<div class="parallax-overlay" style="top: 0;"></div>
 					<div class="slider-title">sustainable Exchange</div>
 				</div>
 			</a>
-			<a class="slider-link" href="/mynepal.php">
+			<a class="slider-link" href="/mynepal">
 				<div class="each-slider" style="transform: translateX(0px); opacity: 1; transition: transform 500ms; -webkit-transition: transform 500ms;">
 					<img src="/images/nepal123.jpg">
 					<div class="parallax-overlay" style="top: 0;"></div>

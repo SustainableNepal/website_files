@@ -15,7 +15,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php dirname(__FILE__) ?>/index.php"><img src="/images/min-logo1.png" style="height: 50px;"></a>
+                <a class="navbar-brand" href="<?php dirname(__FILE__) ?>/index"><img src="/images/min-logo1.png" style="height: 50px;"></a>
             </div>
             <div class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
                 <ul class="nav navbar-nav navbar-right scrollto">
