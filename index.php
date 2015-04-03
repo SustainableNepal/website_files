@@ -26,7 +26,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index"><img src="images/min-logo1.png" style="height: 50px;"></a>
+                <a class="navbar-brand" href="index.php"><img src="images/min-logo1.png" style="height: 50px;"></a>
             </div>
             <div class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
                 <ul class="nav navbar-nav navbar-right scrollto">
@@ -148,7 +148,7 @@
                     <div class="content">
                         <h3 class="margin-bottom25">STUDENTS</h3>
                         <p>If you are interested in an exchange program in schools between Nepal and abroad, we can help you with contacts and prepare a complete program for you.</p>
-                        <a href="sustainableexchange" class="sus-link">Learn More <span class="icon-rightarrow"></span></a>
+                        <a href="sustainableexchange.php" class="sus-link">Learn More <span class="icon-rightarrow"></span></a>
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@
                     <div class="content">
                         <h3 class="margin-bottom25">EDUCATORS</h3>
                         <p> If you are a teacher in a school and are interested in finding out more about the exchange program, contact us for more information.</p>
-                        <a href="sustainableexchange" class="sus-link">Learn More <span class="icon-rightarrow"></span></a>
+                        <a href="sustainableexchange.php" class="sus-link">Learn More <span class="icon-rightarrow"></span></a>
                     </div>
                 </div>
             </div>

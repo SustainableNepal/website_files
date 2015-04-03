@@ -9,7 +9,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index"><img src="images/min-logo2.png"></a>
+                    <a class="navbar-brand" href="index.php"><img src="images/min-logo2.png"></a>
                 </div>
                 <div class="navbar-collapse collapse">
 

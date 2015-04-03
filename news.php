@@ -10,14 +10,14 @@
 // keep on adding the new one at the top of the array and it will show top one first and bottom one last. 
 
 	$gridArrays = [
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 11 2015', 'title' => 'News Main Header 2', 'newsLink' => 'sn_news_1'],
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 12 2015', 'title' => 'News Main Header 3', 'newsLink' => 'sn_news_1'],
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 13 2015', 'title' => 'News Main Header 4', 'newsLink' => 'sn_news_1'],
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 14 2015', 'title' => 'News Main Header 5', 'newsLink' => 'sn_news_1'],
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 15 2015', 'title' => 'News Main Header 6', 'newsLink' => 'sn_news_1'],
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 16 2015', 'title' => 'News Main Header 7', 'newsLink' => 'sn_news_1'],
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 16 2015', 'title' => 'News Main Header 7', 'newsLink' => 'sn_news_1'],
-        ['imageUrl' => 'slide-bg.jpg', 'date' => 'June 05 2012', 'title' => 'Launch of Forest Himalaya', 'newsLink' => 'sn_news_1']
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 11 2015', 'title' => 'News Main Header 2', 'newsLink' => 'sn_news_1.php'],
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 12 2015', 'title' => 'News Main Header 3', 'newsLink' => 'sn_news_1.php'],
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 13 2015', 'title' => 'News Main Header 4', 'newsLink' => 'sn_news_1.php'],
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 14 2015', 'title' => 'News Main Header 5', 'newsLink' => 'sn_news_1.php'],
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 15 2015', 'title' => 'News Main Header 6', 'newsLink' => 'sn_news_1.php'],
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 16 2015', 'title' => 'News Main Header 7', 'newsLink' => 'sn_news_1.php'],
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'Mar 16 2015', 'title' => 'News Main Header 7', 'newsLink' => 'sn_news_1.php'],
+        ['imageUrl' => 'slide-bg.jpg', 'date' => 'June 05 2012', 'title' => 'Launch of Forest Himalaya', 'newsLink' => 'sn_news_1.php']
     ];
 ?>
 
