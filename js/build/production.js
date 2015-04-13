@@ -3054,7 +3054,7 @@ if ($('.view-more').length) {
 	$('.view-more').on('click', function(){
 		$(this).hide();
 		$('.multiple-slider').removeClass('height0').addClass('height100');
-		$('.hide-slider').fadeIn(300);
+		$('.hide-slider').fadeIn(400);
 	});
 
 	$('.hide-slider').on('click', function(){
