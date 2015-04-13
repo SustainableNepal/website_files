@@ -12,7 +12,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet" type="text/css">
-    <link href="<?php dirname(__FILE__) ?>/css/build/production.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php dirname(__FILE__) ?>/css/build/production.css" rel="stylesheet" type="text/css">
    
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
