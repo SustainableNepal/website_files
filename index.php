@@ -5,7 +5,7 @@
     <div class="home-content">
         <div class="container">
             <div class="slide-logo text-center wow fadeIn" data-wow-delay="200ms"><img class="image-responsive" src="images/Logo_SustainNepal_white.png" style="width: 100px; height: 155px;"></div>
-            <div class="main-flex-slider wow fadeIn" data-wow-delay="400ms">
+            <div class="main-flex-slider wow fadeIn" data-wow-delay="400ms" style="display: none;">
                 <h1 class="rotate">Environmental Sustainability, Economic Sustainability, Social Sustainability</h1>
             </div> 
             <h2 class="slide-btm-text wow fadeIn" data-wow-delay="600ms">For a green future in nepal.</h2>

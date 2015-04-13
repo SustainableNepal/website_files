@@ -285,6 +285,10 @@ $(".rotate").textrotator({
 	speed: 1500 
 });
 
+$document.ready(function() {
+    $('#main-flex-slider').show();
+});
+
 var wow = new WOW ({
     boxClass:     'wow',      
     animateClass: 'animated', 
