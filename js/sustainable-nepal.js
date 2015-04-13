@@ -47,7 +47,7 @@ if ($('.view-more').length) {
 
 	$('.hide-slider').on('click', function(){
 		$(this).fadeOut(300, function(){
-			$('.view-more').fadeIn(400);
+			$('.view-more').fadeIn(300);
 		});
 		$('.multiple-slider').removeClass('height100').addClass('height0');
 	});
