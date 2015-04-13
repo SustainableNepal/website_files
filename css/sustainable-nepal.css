@@ -501,7 +501,7 @@ and (max-device-width : 480px){
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAABlBMVEUAAAAAAAClZ7nPAAAAAnRSTlNKpkOwbGoAAAAMSURBVAjXY2BkAAIAAAsAAvdV0pkAAAAASUVORK5CYII=");
+	background-image: url(images/parallax5.png);
 	background-repeat: repeat;
 	background-color: rgba(44,62,80,0.4);
 	z-index: 2;
@@ -534,10 +534,6 @@ and (max-device-width : 480px){
 	vertical-align: middle;
 	z-index: 1;
 }
-
-/*.half-parallax .parallax-overlay, .half-parallax-2 .parallax-overlay{
-    height: 50% !important;
-}*/
 
 .parallax-quote{
 	margin: 0 auto;
