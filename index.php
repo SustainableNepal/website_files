@@ -326,7 +326,10 @@
                 <h5>FOLLOW US:</h5>
                 <div style="margin-top: 25px; margin-bottom: 5px;">
                     <a href="https://www.facebook.com/SustainableNepal" target="_blank" style="margin-right: 5px;"><span class="icon-facebook"></span></a>
-                    <a href="https://twitter.com/SustainNepal" target="_blank"><span class="icon-twitter"></span></a>
+                    <a href="https://twitter.com/SustainNepal" target="_blank" style="margin-right: 5px;"><span class="icon-twitter"></span></a>
+                    <a href="https://plus.google.com/u/0/111460931409352126597/posts" target="_blank" style="margin-right: 5px;"><span class="icon-googleplus"></span></a>
+                    <a href="https://instagram.com/sustainepal/" target="_blank"><span class="icon-instagram"></span></a>
+
                 </div>
                 <div id="copyright">
                     Copyright © 2015 Sustainable Nepal. 

@@ -10215,7 +10215,8 @@ b, strong{
 .icon-facebook-round:before { content:"\F30E"; }
 .icon-linkedin:before { content: "\F319";}
 .icon-twitter:before { content:"\F316"; }
-.icon-googleplus:before { content:"\F30F"; }
+.icon-googleplus:before { content:"\F310"; }
+.icon-instagram:before { content:"\F32D"; }
 .icon-email:before { 
     content:"\2709"; 
     font-size: 18px;
