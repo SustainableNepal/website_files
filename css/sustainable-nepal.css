@@ -550,10 +550,10 @@ and (max-device-width : 480px){
 }
 
 .home-content {
-	/*display: table-cell;
+	display: table-cell;
 	position: relative;
 	vertical-align: middle;
-	z-index: 3;*/
+	z-index: 3;
 }
 
 .slide-logo{
