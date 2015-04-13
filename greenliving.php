@@ -20,8 +20,6 @@
 		</div>
 		<p class="margin-top30">We believe that promoting sustainable practices will positively impact both the individuals and the community. Implementing sustainability practices may require a paradigm shift in thinking and Green Living aims to help in the transition to sustainable practices and in generation of community readiness by sharing tips and examples of practices with sustainability.</p>
 		<p class="margin-top30">The dissemination of information is done through our website and social media sites. Social media will bring together the expertise and creativity of diverse users to promote ways of living that safeguard the environment. We hope that by making the information, ideas and advice easily accessible on our website and Facebook, we can inspire individuals, companies, organizations in Nepal and rest of the world to live a more sustainable and healthier way. We believe that entire communities benefit when individuals and organizations choose sustainable practices and we believe that together we can make a big difference.</p>
-		
-		<div class="btn-container-fb"><a href="facebook.php" class="btn btn-default donate btn-facebook">Facebook Report</a></div>
 	</div>
 	<div class="mobile-project-contianer">
 		<div class="text-center section-heading">
