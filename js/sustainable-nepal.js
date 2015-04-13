@@ -270,8 +270,8 @@ function toggleTabMenu(event){
 	$('html, body').animate({
         scrollTop: $(".tabs").offset().top - 70
     }, 300);
-	$tabContentContainer.children('.active').hide();
-	$('#' + $clickedContent).show().addClass('active');
+	$tabContentContainer.children('.active').fadeOut().removeClass('active');
+	$('#' + $clickedContent).fadeIn().addClass('active');
 }
 
 //************** END About Us Tab Menu **********//
