@@ -10512,13 +10512,13 @@ hr{
 }
 
 .parallax-fix-issue {
-	background-position: 50% 0px;
-  	background-repeat: no-repeat;
-  	background-attachment: fixed;
-  	background-size: cover;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
+	background-position: 50% 0px !important;
+  	background-repeat: no-repeat !important;
+  	background-attachment: fixed !important;
+  	background-size: cover !important;
+  	-webkit-background-size: cover !important;
+  	-moz-background-size: cover !important;
+  	-o-background-size: cover !important;
 }
 
 .parallax-bg {
