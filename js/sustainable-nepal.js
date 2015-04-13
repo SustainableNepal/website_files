@@ -286,7 +286,7 @@ $(".rotate").textrotator({
 });
 
 $document.ready(function() {
-    $('.main-flex-slider').show();
+    $('#home .home-content').show();
 });
 
 var wow = new WOW ({
