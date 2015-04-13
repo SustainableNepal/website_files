@@ -1,6 +1,6 @@
 <?php include("header.php") ?>
 
-<section id="home" class="parallax-bg">
+<section id="home" class="parallax-bg parallax-fix-issue">
     <div class="parallax-overlay"></div> 
     <div class="home-content" style="display: none;">
         <div class="container">
