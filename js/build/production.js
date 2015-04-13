@@ -3298,7 +3298,7 @@ $(".rotate").textrotator({
 });
 
 $document.ready(function() {
-    $('#main-flex-slider').show();
+    $('.main-flex-slider').show();
 });
 
 var wow = new WOW ({
