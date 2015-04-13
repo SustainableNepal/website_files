@@ -1,6 +1,6 @@
 <?php include("header.php") ?>
 
-<section id="home" class="parallax-bg parallax-fix-issue">
+<section id="home" class="parallax-bg image-parallax" style="background-image: url(images/parallax5.png); background-position: 50% 0px;">
     <div class="parallax-overlay"></div> 
     <div class="home-content" style="display: none;">
         <div class="container">
