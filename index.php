@@ -1,6 +1,6 @@
 <?php include("header.php") ?>
 
-<div id="home" class="parallax-bg image-parallax" style="background-image: url(images/parallax5.png); background-position: 50% 0px;">
+<section id="home" class="parallax-bg">
     <div class="parallax-overlay"></div> 
     <div class="home-content" style="display: none;">
         <div class="container">
@@ -14,7 +14,7 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <section id="navigation">
     <div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 72px;"><div class="navbar navbar-inverse navbar-static-top" role="navigation">
