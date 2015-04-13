@@ -270,8 +270,9 @@ function toggleTabMenu(event){
 	$('html, body').animate({
         scrollTop: $(".tabs").offset().top - 70
 	    }, 300, function(){
-			$tabContentContainer.children('.active').fadeOut().removeClass('active');
-			$('#' + $clickedContent).fadeIn().addClass('active');
+			$tabContentContainer.children('.active').removeClass('active').fadeOut(function(){
+				$('#' + $clickedContent).fadeIn().addClass('active');
+			});
     });
 }
 
