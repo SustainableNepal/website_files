@@ -4,12 +4,12 @@
     <div class="parallax-overlay"></div> 
     <div class="home-content">
         <div class="container">
-            <div class="slide-logo text-center"><img class="image-responsive" src="images/Logo_SustainNepal_white.png" style="width: 100px; height: 155px;"></div>
-            <div class="main-flex-slider">
+            <div class="slide-logo text-center wow fadeIn" data-wow-delay="100ms"><img class="image-responsive" src="images/Logo_SustainNepal_white.png" style="width: 100px; height: 155px;"></div>
+            <div class="main-flex-slider wow fadeIn" data-wow-delay="200ms">
                 <h1 class="rotate">Environmental Sustainability, Economic Sustainability, Social Sustainability</h1>
             </div> 
-            <h2 class="slide-btm-text">For a green future in nepal.</h2>
-            <div class="text-center scrollto">
+            <h2 class="slide-btm-text wow fadeIn" data-wow-delay="300ms">For a green future in nepal.</h2>
+            <div class="text-center scrollto wow fadeIn" data-wow-delay="400ms">
                 <a id="about-scroll" href="#about" class="btn btn-default">Get Started<span class="icon-down" style="margin-left: 10px;"></span></a>
             </div>
         </div>
@@ -36,7 +36,6 @@
                     <li class=""><a href="#involved">Get Involved</a></li>
                     <li><a href="#team">Team</a></li>
                     <li class=""><a href="#page-contact">Contact</a></li>
-                    <!-- <li class=""><a href="news.php">news</a></li> -->
                 </ul>
             </div>
         </div>
@@ -167,7 +166,7 @@
     <div id="donate">
         <div class="container text-center">
             <h4 class="margin-bottom25">NOT READY TO GET INVOLVED?</h4>
-            <p>Consider donating to our projects. Your gift will help our organization<br/>to mobilize our resources for a better Nepal.</p>
+            <p>Consider donating to our projects. You gift will help our organization<br/>to mobilize our resources for a better Nepal.</p>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="RBZLGH4A8P4J4">
@@ -300,7 +299,71 @@
     </div>
 </section>
 
-<?php include("sn_footer.php") ?>
+<footer class="sn-footer">
+    <div class="container" style="min-height: 115px;">
+        <div id="daya-inner-footer" class="row">
+            <div class="col-sm-6 col-sm-4">
+                <div class="country-code left">
+                    <h5 class="footer-title">SWEDEN</h5>
+                    <p style="height: 100%;">Stiftsvägen, Lund</p>
+                    <p><span class="phone"></span> <span>+46 761 3385</span></p>
+                    <p><span class="email"></span> <span style="margin-top:0;">info@sustainablenepal.com</span></p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-sm-4">
+                <div class="country-code right" style="margin-bottom: 0;">
+                    <h5 class="footer-title">NEPAL</h5>
+                    <p style="height: 100%;">Ganeshbasti, Maharajgunj, Kathmandu</p>
+                    <p><span class="phone"></span> <span>+977 9841 218779</span></p>
+                    <p><span class="email"></span> <span style="margin-top:0;">info@sustainablenepal.com</span></p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-sm-4 social-follow">
+                <h5>FOLLOW US:</h5>
+                <div style="margin-top: 25px; margin-bottom: 5px;">
+                    <a href="https://www.facebook.com/SustainableNepal" target="_blank" style="margin-right: 5px;"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/SustainNepal" target="_blank"><span class="icon-twitter"></span></a>
+                </div>
+                <div id="copyright">
+                    Copyright © 2015 Sustainable Nepal. 
+                    <a id="ack" href="">Acknowledgements</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="ack-modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Acknowledgements</h4>
+            </div>
+            <div class="modal-body">
+                <p><b>Sustainable Nepal would like to thank the following individuals for their support :</b></p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="team-col team">
+                                <img src="images/mohan.jpg" alt="">
+                                <h4>Mohan Duwal</h4>
+                                <span>Photographer</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="team-col">
+                                <img src="images/Bivek.jpg" alt="">
+                                <h4>Bivek Mahat</h4>
+                                <span>Intern, Nepal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div id="thank-modal" class="modal fade">
     <div class="modal-dialog">
@@ -317,15 +380,3 @@
 </div>
 
 <?php include("footer.php") ?>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-34039577-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<!--END Modal For the Home Page-->
