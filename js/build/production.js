@@ -3281,9 +3281,10 @@ function toggleTabMenu(event){
 	$clickedItem.addClass('tab-current');
 	$('html, body').animate({
         scrollTop: $(".tabs").offset().top - 70
-    }, 300);
-	$tabContentContainer.children('.active').fadeOut().removeClass('active');
-	$('#' + $clickedContent).fadeIn().addClass('active');
+	    }, 300, function(){
+			$tabContentContainer.children('.active').fadeOut().removeClass('active');
+			$('#' + $clickedContent).fadeIn().addClass('active');
+    });
 }
 
 //************** END About Us Tab Menu **********//
