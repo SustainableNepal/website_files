@@ -463,14 +463,14 @@ hr{
 	z-index: 1;
 }
 
-@media screen and (max-width:1025px) {
+/*@media screen and (max-width:1025px) {
   .parallax-bg {
     background-attachment: scroll;
   }
   .half-parallax-2{
   	 background-attachment: scroll;
   }
-}
+}*/
 
 @media only screen 
 and (min-device-width : 805px) 
