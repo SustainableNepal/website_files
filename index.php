@@ -2,7 +2,7 @@
 
 <section id="home" class="parallax-bg">
     <div class="parallax-overlay"></div>
-        <div style="display: table;"> 
+        <div class="parallax-inner-cont"> 
             <div class="home-content" style="display: none;">
                 <div class="container">
                     <div class="slide-logo text-center wow fadeIn" data-wow-delay="200ms"><img class="image-responsive" src="images/Logo_SustainNepal_white.png" style="width: 100px; height: 155px;"></div>
@@ -180,7 +180,8 @@
 </section>
 
 <section class="parallax-bg new">
-    <div class="parallax-overlay" style="height:100%;"></div> 
+    <div class="parallax-overlay" style="height:100%;"></div>
+    <div class="parallax-inner-cont"> 
         <div class="home-content">
             <div class="container">
                 <div class="parallax-quote text-center">
@@ -191,6 +192,7 @@
                 </div>
             </div>
         </div>
+    </div>
 </section>
 
 <section id="team" class="section-padding">
