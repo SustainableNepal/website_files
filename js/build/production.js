@@ -3016,6 +3016,8 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
 // Sustainable-Nepal.js
 // Author: Sahaj Bajracharya
 
+
+
 var $window = $(window),
 	$document = $(document),
 	$navBarLink = $('.nav li a'),
@@ -3023,6 +3025,12 @@ var $window = $(window),
 	$navBar = $('#navigation .navbar'),
 	$eachSlider = $(".each-slider") || {};
 
+
+$document.ready(function() {
+	$window.load(function() {
+			$('#home .home-content').show();
+	});
+});
 
 //************** Navigation Menu Interaction **********//
 
@@ -3298,10 +3306,6 @@ $(".rotate").textrotator({
 	animation: "fade", 
 	separator: ",", 
 	speed: 1500 
-});
-
-$document.ready(function() {
-    $('#home .home-content').show();
 });
 
 var wow = new WOW ({
