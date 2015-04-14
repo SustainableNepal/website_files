@@ -57,7 +57,7 @@
     </div>
 
     <div id="illustration-container">
-        <img data-original="images/illustation1.png" class="lazy">
+        <img src="images/illustation1.png">
     </div>
     
     <section class="tabs tabs-style-iconbox">
