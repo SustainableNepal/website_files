@@ -1,5 +1,9 @@
 <?php include("header.php") ?>
-
+<div class="iS-Loading">
+  <div class="iS-Loadingbox">
+    <div class="loader">loading</div>
+  </div>
+</div>
 <section id="home" class="parallax-bg">
     <div class="parallax-overlay"></div>
         <div class="parallax-inner-cont"> 
