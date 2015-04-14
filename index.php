@@ -57,7 +57,7 @@
     </div>
 
     <div id="illustration-container">
-        <img src="images/illustation1.png">
+        <img data-original="images/illustation1.png" class="lazy">
     </div>
     
     <section class="tabs tabs-style-iconbox">
@@ -136,7 +136,7 @@
         <div class="row margin-bottom80">
             <div class="col-sm-4 wow animated fadeInLeft animated"  data-wow-duration="900ms" data-wow-delay="400ms">
                 <div class="panel text-center">
-                    <img class="image-responsive margin-top40" src="images/vol.png">
+                    <img class="image-responsive margin-top40 lazy" data-original="images/vol.png">
                     <div class="content">
                         <h3 class="margin-bottom25">VOLUNTEERS</h3>
                         <p>If you are interested in helping Nepal in some way and volunteering in Sustainable Nepal, please send us your application letter and your CV.</p>
@@ -146,7 +146,7 @@
             </div>
             <div class="col-sm-4 wow animated fadeInLeft animated"  data-wow-duration="900ms" data-wow-delay="500ms">
                 <div class="panel text-center">
-                    <img class="image-responsive margin-top40" src="images/stu.png">
+                    <img class="image-responsive margin-top40 lazy" data-original="images/stu.png">
                     <div class="content">
                         <h3 class="margin-bottom25">STUDENTS</h3>
                         <p>If you are interested in an exchange program in schools between Nepal and abroad, we can help you with contacts and prepare a complete program for you.</p>
@@ -156,7 +156,7 @@
             </div>
             <div class="col-sm-4 wow animated fadeInLeft animated"  data-wow-duration="900ms" data-wow-delay="600ms">
                 <div class="panel text-center">
-                    <img class="image-responsive margin-top40" src="images/edu.png">
+                    <img class="image-responsive margin-top40 lazy" data-original="images/edu.png">
                     <div class="content">
                         <h3 class="margin-bottom25">EDUCATORS</h3>
                         <p> If you are a teacher in a school and are interested in finding out more about the exchange program, contact us for more information.</p>
@@ -206,28 +206,28 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="100ms">
-                    <img src="images/sardu.jpg" alt="">
+                    <img data-original="images/sardu.jpg" class="lazy">
                     <h4>Sardu Bajracharya</h4>
                     <span>Founder & Program Director</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
                 <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="200ms">
-                    <img src="images/johan.jpg" alt="">
+                    <img data-original="images/johan.jpg" class="lazy">
                     <h4>Johan Lahti</h4>
                     <span>Geographic IT Developer</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
                 <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="400ms">
-                    <img src="images/tobjorn.jpg" alt="">
+                    <img data-original="images/tobjorn.jpg" class="lazy">
                     <h4>Torbjörn Lahti</h4>
                     <span>Advisor</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
                 <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="300ms">
-                    <img src="images/sahaj.jpg" alt="">
+                    <img data-original="images/sahaj.jpg" class="lazy">
                     <h4>Sahaj Bajracharya</h4>
                     <span>Rich Internet Application Developer</span>
                 </div>
@@ -236,28 +236,28 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="500ms">
-                    <img src="images/Srijan.jpg" alt="">
+                    <img data-original="images/Srijan.jpg" class="lazy">
                     <h4>Srijan Tamrakar</h4>
                     <span>Graphic Designer</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
                 <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="600ms">
-                    <img src="images/surina.jpg" alt="">
+                    <img data-original="images/surina.jpg" class="lazy">
                     <h4>Surina Gurung</h4>
                     <span>Exchange Program Coordinator, Nepal</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
                 <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="700ms">
-                    <img src="images/rai.jpg" alt="">
+                    <img data-original="images/rai.jpg" class="lazy">
                     <h4>Pratap Rai</h4>
                     <span>Communications Coordinator</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
                 <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="800ms">
-                    <img src="images/Friederike.jpg" alt="">
+                    <img data-original="images/Friederike.jpg" class="lazy">
                     <h4>Friederike Arndt</h4>
                     <span>Designer</span>
                 </div>
