@@ -13,7 +13,7 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet" type="text/css">
     <link href="<?php dirname(__FILE__) ?>/css/build/production.min.css" rel="stylesheet" type="text/css">
-   <script type="text/css">
+   <style type="text/css">
       .iS-Loading {
         z-index: 10000;
         top: 0;
@@ -82,8 +82,7 @@
           transform: rotate(360deg);
         }
       }
-
-   </script>
+   </style>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
