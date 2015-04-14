@@ -201,7 +201,7 @@
         <div class="margin-top80 margin-bottom60 text-center section-heading">
             <h2 class="section-heading">OUR TEAM</h2>
             <hr>
-            <div class="label-text">Make a difference in your community and world.</div>
+            <div class="label-text">We are a handful of people working towards a Sustainable Nepal.</div>
         </div>
         <div class="row">
             <div class="col-sm-3">
