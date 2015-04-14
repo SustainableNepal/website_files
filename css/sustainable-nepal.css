@@ -571,7 +571,7 @@ and (max-device-width : 480px){
 }
 
 h2.slide-btm-text{
-     font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Open Sans', sans-serif !important;
     text-align: center;
     margin: 30px 0;
     font-weight: 300;
@@ -586,6 +586,7 @@ h2.slide-btm-text{
 }
 
 #home h1{
+	font-family: 'Dosis', sans-serif;
     font-size: 30px;
     color:#fff;
     text-transform: uppercase;
@@ -595,6 +596,7 @@ h2.slide-btm-text{
 }
 
 #home h2{
+	font-family: 'Dosis', sans-serif;
     font-size: 18px;
     color:#fff;
     text-transform: uppercase;
