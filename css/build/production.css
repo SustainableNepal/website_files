@@ -10540,7 +10540,7 @@ hr{
   	width: 100%;
 }
 
-@media screen and (max-width:1025px) {
+@media screen and (max-width:805px) {
   .parallax-bg {
     background-attachment: scroll;
   }
