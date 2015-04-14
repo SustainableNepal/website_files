@@ -169,7 +169,7 @@
     <div id="donate">
         <div class="container text-center">
             <h4 class="margin-bottom25">NOT READY TO GET INVOLVED?</h4>
-            <p>Consider donating to our projects. You gift will help our organization<br/>to mobilize our resources for a better Nepal.</p>
+            <p>Consider donating to our projects. Your gift will help our organization<br/>to mobilize our resources for a better Nepal.</p>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="RBZLGH4A8P4J4">
