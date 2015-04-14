@@ -57,7 +57,7 @@
     </div>
 
     <div id="illustration-container">
-        <img src="images/illustation1.png">
+        <img data-original="images/illustation1.png" class="lazy">
     </div>
     
     <section class="tabs tabs-style-iconbox">
@@ -354,14 +354,14 @@
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="team-col team">
-                                <img data-original="images/mohan.jpg" class="lazy">
+                                <img src="images/mohan.jpg" alt="">
                                 <h4>Mohan Duwal</h4>
                                 <span>Photographer</span>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="team-col">
-                                <img data-original="images/Bivek.jpg" class="lazy">
+                                <img src="images/Bivek.jpg" alt="">
                                 <h4>Bivek Mahat</h4>
                                 <span>Intern, Nepal</span>
                             </div>
