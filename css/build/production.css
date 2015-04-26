@@ -10182,6 +10182,12 @@ b, strong{
     font-family: "Proxima Nova-semibold";
 }
 
+.map:hover {
+	background: #e04515 !important;
+	border-color: #e04515 !important;
+	color: #fff !important;
+}
+
 /* Icon CSS */
 
 [class^="icon-"], [class*=" icon-"]{
