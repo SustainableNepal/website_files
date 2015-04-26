@@ -24,12 +24,17 @@ $document.ready(function() {
 
 $(".navbar").sticky({topSpacing: 0});
 $('.scrollto a[href*=#]:not([href=#])').click(function() {
+	var num = 10;
+	if($(this).hasClass('earthquake')) {
+		num = 0;
+	}
 	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		var target = $(this.hash);
 		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		
 		if (target.length) {
 			$('html,body').animate({
-				scrollTop: target.offset().top - 10
+				scrollTop: target.offset().top - num
 	        }, 1000);
 	        return false;
 	    }
