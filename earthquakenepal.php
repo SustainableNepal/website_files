@@ -6,10 +6,10 @@
             <div class="home-content" style="display: none;">
                 <div class="container">
                     <!-- <div class="slide-logo text-center wow fadeIn" data-wow-delay="200ms"><img class="image-responsive" src="images/Logo_SustainNepal_white.png" style="width: 100px; height: 155px;"></div> -->
-                    <div class="main-flex-slider wow fadeIn" data-wow-delay="400ms">
+                    <div class="main-flex-slider wow fadeIn" data-wow-delay="200ms">
                         <h1>NEPAL EARTHQUAKE 2015</h1>
                     </div> 
-                    <h2 class="slide-btm-text wow fadeIn" data-wow-delay="600ms" style="margin-top: 15px;">MAGNITUDE 7.9</h2>
+                    <h2 class="slide-btm-text wow fadeIn" data-wow-delay="350ms" style="margin-top: 15px;">MAGNITUDE 7.9</h2>
                     <div class="text-center scrollto wow animated fadeInUp" data-wow-delay="400ms">
                         <a id="about-scroll" href="#about" class="btn btn-default earthquake" style=" background: #e04515; border-color: #e04515; color: #fff;">Read More<span class="icon-down" style="margin-left: 10px;"></span></a>
                     </div>
