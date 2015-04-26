@@ -10558,11 +10558,8 @@ hr{
 }
 
 @media screen and (max-width:805px) {
-  .parallax-bg {
+  .parallax-bg, .parallax-bg3, .half-parallax-2 {
     background-attachment: scroll;
-  }
-  .half-parallax-2{
-  	 background-attachment: scroll;
   }
 }
 
