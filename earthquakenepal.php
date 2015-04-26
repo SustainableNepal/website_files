@@ -11,7 +11,7 @@
                     </div> 
                     <h2 class="slide-btm-text wow fadeIn" data-wow-delay="350ms" style="margin-top: 15px;">MAGNITUDE 7.9</h2>
                     <div class="text-center scrollto wow animated fadeInUp" data-wow-delay="400ms">
-                        <a id="about-scroll" href="#about" class="btn btn-default earthquake" style=" background: #e04515; border-color: #e04515; color: #fff;">Read More<span class="icon-down" style="margin-left: 10px;"></span></a>
+                        <a id="about-scroll" href="#about" class="btn btn-default earthquake">Read More<span class="icon-down" style="margin-left: 10px;"></span></a>
                     </div>
                 </div>
             </div>
