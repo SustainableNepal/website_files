@@ -68,7 +68,7 @@
     </div>
 </section>
 
-<div id="donate" style="background-image:url(images/map.png); background-position: 0% 56%; padding-top: 120px; padding-bottom: 120px;">
+<div id="donate" style="background-image:url(images/map.png);   background-position: 15%; background-size: cover; padding-top: 120px; padding-bottom: 120px;">
     <div class="parallax-overlay" style="margin-top: -120px; height: 340px;"></div>
     <div class="container text-center" style=" color: #ffffff;; position: relative;">
         <a href="http://www.sustainablemap.org/earthquakenepal" target="_blank" class="map btn btn-default" style=" background: #e04515; border-color: #e04515; color: #fff;">VIEW MAP</a>
