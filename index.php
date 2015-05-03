@@ -208,7 +208,7 @@
                 <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="100ms">
                     <img src="images/sardu.jpg" alt="">
                     <h4>Sardu Bajracharya</h4>
-                    <span>Founder & Program Director</span>
+                    <span>Founder / Director</span>
                 </div>
             </div><!--team col-->
             <div class="col-sm-3">
@@ -229,7 +229,7 @@
                 <div class="team-col wow animated fadeInLeft" data-wow-duration="700ms" data-wow-delay="300ms">
                     <img src="images/sahaj.jpg" alt="">
                     <h4>Sahaj Bajracharya</h4>
-                    <span>Rich Internet Application Developer</span>
+                    <span>Web Application Developer</span>
                 </div>
             </div><!--team col-->
         </div><div class="divided-50"></div>

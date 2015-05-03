@@ -63,6 +63,13 @@ if (isMobile()) {
 					<div class="slider-title">Research Nepal</div>
 				</div>
 			</a>
+			<a class="slider-link" href="/earthquake.php">
+				<div class="each-slider" style="transform: translateX(0px); opacity: 1; transition: transform 500ms; -webkit-transition: transform 500ms;">
+					<img src="/images/earthquake.png">
+					<div class="parallax-overlay" style="top: 0;"></div>
+					<div class="slider-title">Earthquake 2015</div>
+				</div>
+			</a>
 		</div>
 		<div class="slider-arrow left-arrow">
 			<span class="icon-lefttarrow"></span>

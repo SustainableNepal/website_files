@@ -47,7 +47,7 @@ $('.scrollto a[href*=#]:not([href=#])').click(function() {
 
 var transfromValue = 0;
 	initialValue = 0,
-	leftClick = 3,
+	leftClick = 4,
 	rightClick = 0,
 	$sliderButton = $('.slider-arrow');
 
@@ -76,7 +76,7 @@ function sliderInteraction() {
 	var $this = $(this);
 
 	if ($this.hasClass('right-arrow')) {
-		if (rightClick >= 3) {
+		if (rightClick >= 4) {
 			return;
 		}
 		transfromValue = initialValue + sliderWidth;
@@ -85,7 +85,7 @@ function sliderInteraction() {
 		rightClick++;
 		leftClick--;
 	} else {
-		if (leftClick >= 3) {
+		if (leftClick >= 4) {
 			return;
 		}
 		transfromValue = initialValue - sliderWidth;
