@@ -59,7 +59,7 @@
         <img src="images/muncipal.png"/>
         <figcaption>
             <div>Eco - <span>Municipality 5.0</span></div>
-            <p>nitiating and implementing the concept of eco-municipalities in Nepal to encourage development towards a more sustainable society.<br/><br/><span class="text-tiny" style="font-size: 12px;">Coming Soon!</span><!-- <span class="icon-rightarrow"></span> --></p>
+            <p>Initiating and implementing the concept of eco-municipalities in Nepal to encourage development towards a more sustainable society.<br/><br/><span class="text-tiny" style="font-size: 12px;">Coming Soon!</span><!-- <span class="icon-rightarrow"></span> --></p>
             <a href="#project">View more</a>
         </figcaption>           
     </figure>
