@@ -11,8 +11,7 @@ var $window = $(window),
 	$navBarLink = $('.nav li a'),
 	$home = $('#home') || {},
 	$navBar = $('#navigation .navbar'),
-	$eachSlider = $('.each-slider') || {},
-	$lazyDivs = $('div.lazy');
+	$eachSlider = $('.each-slider') || {};
 
 
 $document.ready(function() {
@@ -324,9 +323,5 @@ $('#ack').on('click', function(event) {
 });
 
 //************** END Modal **********//
-$lazyDivs.lazyload({
-    threshold : 200
-});
-// ******* Lazy Loading ************ //
 
 
