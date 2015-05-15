@@ -61,12 +61,12 @@
 
 <section id="about" style="margin-top: 0; padding-top: 0; background-color: #ffffff;">
     <div class="container">        
-        <div class="margin-top80 margin-bottom80 section-heading wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
-            <div class="label-text margin-bottom25 text-center">Nepal Earthquake Map 2015</div>
+        <div class="margin-top80 margin-bottom80 section-heading wow animated fadeInUp text-center" data-wow-duration="700ms" data-wow-delay="300ms">
+            <div class="label-text margin-bottom25">Nepal Earthquake Map 2015</div>
             <p class="text-small">Sustainable Nepal has developed an interactive and crowd-sourced earthquake-mapping tool based on open source libraries and data. This tool helps users to post information about earthquake impacts as well activities related to the earthquake.</p>
             <p class="text-small">During the recovery process, this tool can be useful for communities at different stages of recovering from the earthquake. For instance allowing them to focus resources into areas with the biggest need of intervention, as well to prepare and plan the recovery and rescue operations. Also visualizing on-going activities and enhancing information exchange among local, national and International actors will be easier.</p>
             <p class="text-small">This map is completely open and available for everyone to contribute to and to use for rescue and recovery processes. The more people contribute in adding markers – the better and more informed decisions could be made in coming days.</p>
-            <p class="text-center" style="font-size: 27px; line-height: 40px; margin-bottom: 0;">Together we can build up Nepal again – this time, in a sustainable way!</p>
+            <p style="font-size: 27px; line-height: 40px; margin-bottom: 0;">Together we can build up Nepal again – this time, in a sustainable way!</p>
         </div>
     </div>
 </section>
