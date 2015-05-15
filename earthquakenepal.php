@@ -52,7 +52,7 @@
         foreach ($gridArrays as $individualGrid) {
     ?>
             <div class="quarter-grid">
-                <div style="background-image:url(images/<?php echo $individualGrid['imageUrl']; ?>)" class="quarter-grid-main-img"></div>
+                <div class="lazy" data-original="images/<?php echo $individualGrid['imageUrl']; ?>" style="background-image:url(images/loading.gif)" class="quarter-grid-main-img"></div>
             </div>
     <?php
         }

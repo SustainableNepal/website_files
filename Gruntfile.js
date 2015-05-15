@@ -16,6 +16,7 @@ module.exports = function(grunt) {
                     'js/lib/jQuery.scrollPoint.js',
                     'js/lib/bootstrap.js',
                     'js/lib/respond.js',
+                    'js/lib/jquery.lazyload.js',
                     'js/sustainable-nepal.js'
                 ],
                 dest: 'js/build/production.js'

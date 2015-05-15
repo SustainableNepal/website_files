@@ -11,7 +11,8 @@ var $window = $(window),
 	$navBarLink = $('.nav li a'),
 	$home = $('#home') || {},
 	$navBar = $('#navigation .navbar'),
-	$eachSlider = $(".each-slider") || {};
+	$eachSlider = $('.each-slider') || {},
+	$lazyDivs = $('div.lazy');
 
 
 $document.ready(function() {
@@ -25,7 +26,7 @@ $document.ready(function() {
 $(".navbar").sticky({topSpacing: 0});
 $('.scrollto a[href*=#]:not([href=#])').click(function() {
 	var num = 10;
-	if($(this).hasClass('earthquake')) {
+	if ($(this).hasClass('earthquake')) {
 		num = 0;
 	}
 	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -323,3 +324,9 @@ $('#ack').on('click', function(event) {
 });
 
 //************** END Modal **********//
+$lazyDivs.lazyload({
+    threshold : 200
+});
+// ******* Lazy Loading ************ //
+
+
