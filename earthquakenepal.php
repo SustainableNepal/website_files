@@ -7,9 +7,9 @@
                 <div class="container">
                     <div class="slide-logo text-center wow fadeIn" data-wow-delay="200ms"><img class="image-responsive" src="images/Logo_SustainNepal_white.png" style="width: 100px; height: 155px;"></div>
                     <div class="main-flex-slider wow fadeIn" data-wow-delay="200ms">
-                        <h1> Nepal Earthquake Map 2015</h1>
+                        <h1>NEPAL EARTHQUAKE 2015</h1>
                     </div> 
-                    <h2 class="slide-btm-text wow fadeIn" data-wow-delay="350ms" style="margin-top: 15px;">MAGNITUDE 7.9 & 7.4</h2>
+                    <h2 class="slide-btm-text wow fadeIn" data-wow-delay="350ms" style="margin-top: 15px;">MAGNITUDE 7.9 & 7.3</h2>
                     <div class="text-center scrollto wow animated fadeInUp" data-wow-delay="400ms">
                         <a id="about-scroll" href="#about" class="btn btn-default earthquake">Read More<span class="icon-down" style="margin-left: 10px;"></span></a>
                     </div>
@@ -21,8 +21,8 @@
 <section id="about" style="margin-top: 0; padding-top: 0;">
     <div class="container">        
         <div class="margin-top80 margin-bottom80 text-center section-heading wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
-            <div class="label-text margin-bottom25">On 25 April, an earthquake of 7.9 magnitude and on 12 May, an earthquake of 7.4 magnitude hit Nepal killing thousands of people and leaving behind a trail of destruction. </div>
-            <p class="text-small about-paragraph">The epicentre of the 25 April earthquake was in a remote area of Gorkha district , 80 km north-west of Kathmandu. The earthquake on 12 May started about 80km north-east of Kathmandu, halfway to Everest. A series of aftershocks has followed the earthquakes and the damages have been severe and catastrophic.</p>
+            <div class="label-text margin-bottom25">On 25 April, an earthquake of 7.9 magnitude and on 12 May, an earthquake of 7.3 magnitude hit Nepal killing thousands of people and leaving behind a trail of destruction. </div>
+            <p class="text-small about-paragraph">The epicentre of the 25 April earthquake was in a remote area of Gorkha district, 80 km north-west of Kathmandu. The earthquake on 12 May started about 80 km north-east of Kathmandu, halfway between Mount Everest and Kathmandu. A series of aftershocks has followed the earthquakes and the damages have been severe and catastrophic.</p>
         </div>
     </div>
 </section>
@@ -82,7 +82,7 @@
 <div id="donate">
     <div class="container text-center">
         <h4 class="margin-bottom25">STAY STRONG NEPAL</h4>
-        <p>Sustainable Nepal is one of the organizations behind the initiative “Katastrofhjälp Nepal” (in Sweden) - which is a collaboration between various Swedish and Nepalese non-profit organizations - to reach out to mobilize financial assistance to the victims of the earthquake in Nepal.</p>
+        <p>Sustainable Nepal is one of the organizations behind the initiative "<b>Disaster Relief Nepal</b>" - which is a collaborative campaign between various Swedish and Nepalese organizations – created to mobilize financial assistance to the earthquake victims in Nepal.</p>
         <a href="http://www.katastrofhjalpnepal.se/" target="_blank" class="btn btn-default map" style=" background: #e04515; border-color: #e04515; color: #fff;">DONATE</a>
                 <!-- <a href="" class="btn btn-default donate">DONATE</a> -->
         </form>
