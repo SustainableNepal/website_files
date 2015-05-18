@@ -1,4 +1,4 @@
-<?php include("header.php") ?>
+<?php include("headereq.php") ?>
 
 <section id="home" class="parallax-bg3">
     <div class="parallax-overlay"></div>
