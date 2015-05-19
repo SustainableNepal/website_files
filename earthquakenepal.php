@@ -5,7 +5,6 @@
         <div class="parallax-inner-cont"> 
             <div class="home-content" style="display: none;">
                 <div class="container">
-                    <div class="slide-logo text-center wow fadeIn" data-wow-delay="200ms"><img class="image-responsive" src="images/Logo_SustainNepal_white.png" style="width: 100px; height: 155px;"></div>
                     <div class="main-flex-slider wow fadeIn" data-wow-delay="200ms">
                         <h1>NEPAL EARTHQUAKE 2015</h1>
                     </div> 
@@ -82,7 +81,7 @@
 <div id="donate">
     <div class="container text-center">
         <h4 class="margin-bottom25">STAY STRONG NEPAL</h4>
-        <p>Sustainable Nepal is one of the organizations behind the initiative "<b>Disaster Relief Nepal</b>" - which is a collaborative campaign between various Swedish and Nepalese organizations – created to mobilize financial assistance to the earthquake victims in Nepal.</p>
+        <p>Sustainable Nepal is one of the organizations behind the initiative "<b><a href="http://www.katastrofhjalpnepal.se/">Disaster Relief Nepal</a></b>" - which is a collaborative campaign between various Swedish and Nepalese organizations – created to mobilize financial assistance to the earthquake victims in Nepal.</p>
         <a href="http://www.katastrofhjalpnepal.se/" target="_blank" class="btn btn-default map" style=" background: #e04515; border-color: #e04515; color: #fff;">DONATE</a>
                 <!-- <a href="" class="btn btn-default donate">DONATE</a> -->
         </form>
