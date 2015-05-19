@@ -82,7 +82,7 @@
 <div id="donate">
     <div class="container text-center">
         <h4 class="margin-bottom25">STAY STRONG NEPAL</h4>
-        <p>Sustainable Nepal is one of the organizations behind the initiative "<b><a href="http://www.katastrofhjalpnepal.se/">Disaster Relief Nepal</a></b>" - which is a collaborative campaign between various Swedish and Nepalese organizations – created to mobilize financial assistance to the earthquake victims in Nepal.</p>
+        <p>Sustainable Nepal is one of the organizations behind the initiative "<b><a target="_blank" href="http://www.katastrofhjalpnepal.se/">Disaster Relief Nepal</a></b>" - which is a collaborative campaign between various Swedish and Nepalese organizations – created to mobilize financial assistance to the earthquake victims in Nepal.</p>
         <a href="http://www.katastrofhjalpnepal.se/" target="_blank" class="btn btn-default map" style=" background: #e04515; border-color: #e04515; color: #fff;">DONATE</a>
                 <!-- <a href="" class="btn btn-default donate">DONATE</a> -->
         </form>
