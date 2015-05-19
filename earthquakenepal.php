@@ -5,6 +5,7 @@
         <div class="parallax-inner-cont"> 
             <div class="home-content" style="display: none;">
                 <div class="container">
+                    <div class="slide-logo text-center wow fadeIn" data-wow-delay="200ms"><a href="/"><img class="image-responsive" src="images/Logo_SustainNepal_white.png" style="width: 100px; height: 155px;"></a></div>
                     <div class="main-flex-slider wow fadeIn" data-wow-delay="200ms">
                         <h1>NEPAL EARTHQUAKE 2015</h1>
                     </div> 
