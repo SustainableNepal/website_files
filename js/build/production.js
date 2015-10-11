@@ -3268,12 +3268,26 @@ var $window = $(window),
 	$navBar = $('#navigation .navbar'),
 	$eachSlider = $('.each-slider') || {};
 
-
-$document.ready(function() {
-	$window.load(function() {
-			$('#home .home-content').show();
-	});
+//************** Plugin initialization **********//
+$(".rotate").textrotator({
+	animation: "fade", 
+	separator: ",", 
+	speed: 1500 
 });
+
+var wow = new WOW ({
+    boxClass:     'wow',      
+    animateClass: 'animated', 
+    offset:       0,          
+    mobile:       true,      
+    live:         true       
+  }
+);
+
+wow.init();
+
+//************** END Plugin initialization **********//
+
 
 //************** Navigation Menu Interaction **********//
 
@@ -3546,28 +3560,6 @@ function toggleTabMenu(event){
 }
 
 //************** END About Us Tab Menu **********//
-
-
-//************** Plugin initialization **********//
-
-$(".rotate").textrotator({
-	animation: "fade", 
-	separator: ",", 
-	speed: 1500 
-});
-
-var wow = new WOW ({
-    boxClass:     'wow',      
-    animateClass: 'animated', 
-    offset:       0,          
-    mobile:       true,      
-    live:         true       
-  }
-);
-
-wow.init();
-
-//************** END Plugin initialization **********//
 
 
 //************** Modal **********//

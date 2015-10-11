@@ -10143,6 +10143,10 @@ p {
    	transition: none; 
 }
 
+.wow {
+  visibility: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Proxima Nova-semibold', 'Dosis', sans-serif;
     font-weight: 700;
