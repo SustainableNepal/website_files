@@ -11,6 +11,7 @@ var $window = $(window),
 	$navBarLink = $('.nav li a'),
 	$home = $('#home') || {},
 	$navBar = $('#navigation .navbar'),
+	$getStartedBtn = $('#about-scroll'),
 	$eachSlider = $('.each-slider') || {};
 
 //************** Plugin initialization **********//
@@ -37,7 +38,10 @@ wow.init();
 //************** Navigation Menu Interaction **********//
 
 $(".navbar").sticky({topSpacing: 0});
-$('.scrollto a[href*=#]:not([href=#])').click(function() {
+$('.scrollto a[href*=#]:not([href=#])').on('click', scrollToElement);
+$getStartedBtn.on('click', scrollToElement);
+
+function scrollToElement() {
 	var num = 10;
 	if ($(this).hasClass('earthquake')) {
 		num = 0;
@@ -53,7 +57,7 @@ $('.scrollto a[href*=#]:not([href=#])').click(function() {
 	        return false;
 	    }
 	}
-});
+}
 
 //************** END Navigation Menu Interaction **********//
 
